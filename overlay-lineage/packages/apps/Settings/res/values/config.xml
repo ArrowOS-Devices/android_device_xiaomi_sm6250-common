@@ -31,4 +31,7 @@
     <!-- Smart Charging enable -->
     <bool name="config_supportSmartCharging">true</bool>
 
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage">com.cyanogenmod.settings.doze/com.cyanogenmod.settings.doze.DozeSettingsActivity</string>
+
 </resources>
