@@ -60,3 +60,7 @@ vendor.sys.thermal.			u:object_r:thermal_engine_prop:s0
 
 # Wlan
 persist.vendor.wigig.npt.enable         u:object_r:vendor_default_prop:s0
+
+# Mlipay
+persist.sys.ifaa                        u:object_r:ifaa_prop:s0
+persist.vendor.sys.pay.		        u:object_r:ifaa_prop:s0

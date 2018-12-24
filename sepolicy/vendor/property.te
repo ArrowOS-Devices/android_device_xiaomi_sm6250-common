@@ -4,3 +4,6 @@ type lirc_prop, property_type;
 
 # Dirac
 type dirac_prop, property_type;
+
+# Mlipay
+type ifaa_prop, property_type;

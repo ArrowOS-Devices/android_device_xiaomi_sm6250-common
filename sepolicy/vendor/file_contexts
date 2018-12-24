@@ -37,6 +37,9 @@
 # Light
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sm6250    u:object_r:hal_light_default_exec:s0
 
+# Mlipay
+/vendor/bin/mlipayd@1\.1                                     u:object_r:hal_mlipay_default_exec:s0
+
 # Perf
 /vendor/bin/hw/vendor\.qti\.hardware\.perf@2\.2-service\.xiaomi_sm6250    u:object_r:same_process_hal_file:s0
 

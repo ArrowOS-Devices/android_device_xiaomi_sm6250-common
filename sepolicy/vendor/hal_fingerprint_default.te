@@ -1,3 +1,4 @@
+type vendor_fp_prop, property_type;
 hal_server_domain(hal_fingerprint_default, hal_fingerprint)
 init_daemon_domain(hal_fingerprint_default)
 
