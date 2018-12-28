@@ -22,14 +22,22 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import androidx.preference.PreferenceManager;
 import android.provider.Settings;
+import android.util.Log;
 
+import com.xiaomi.parts.dirac.DiracUtils;
 import com.xiaomi.parts.kcal.Utils;
 import com.xiaomi.parts.ambient.SensorsDozeService;
 import com.xiaomi.parts.thermal.ThermalUtils;
 
 public class BootReceiver extends BroadcastReceiver implements Utils {
 
+    private static final boolean DEBUG = false;
+    private static final String TAG = "XiaomiParts";
+
     public void onReceive(Context context, Intent intent) {
+        if (DEBUG)
+            Log.d(TAG, "Received boot completed intent");
+
         if (!intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
             return;
         }
@@ -67,6 +75,9 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
 
        // Ambient
         context.startService(new Intent(context, SensorsDozeService.class));
+
+       // Dirac
+        DiracUtils.initialize(context);
 
        // Thermal
         ThermalUtils.initialize(context);

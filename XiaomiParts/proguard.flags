@@ -6,6 +6,10 @@
   *;
 }
 
+-keep class com.xiaomi.parts.dirac.* {
+  *;
+}
+
 -keep class com.xiaomi.parts.kcal.* {
   *;
 }
