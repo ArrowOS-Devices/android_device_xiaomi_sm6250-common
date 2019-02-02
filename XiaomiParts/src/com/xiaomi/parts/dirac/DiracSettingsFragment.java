@@ -128,7 +128,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
         mTextView.setText(getString(isChecked ? R.string.switch_bar_on : R.string.switch_bar_off));
         mSwitchBar.setActivated(isChecked);
 
-        DiracUtils.setMusic(isChecked);
+        DiracUtils.setEnabled(isChecked);
         mHifi.setEnabled(isChecked);
         mHeadsetType.setEnabled(isChecked);
         mPreset.setEnabled(isChecked);
