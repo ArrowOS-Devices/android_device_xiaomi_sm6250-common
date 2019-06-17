@@ -732,4 +732,13 @@
          user-set value if toggled by settings so the "Transition animation scale" setting
          should also be hidden if intended to be permanent. -->
     <item name="config_appTransitionAnimationDurationScaleDefault" format="float" type="dimen">0.8</item>
+
+    <!-- User activity timeout: Minimum screen off timeout in milliseconds.
+         Sets a lower bound for the {@link Settings.System#SCREEN_OFF_TIMEOUT} setting
+         which determines how soon the device will go to sleep when there is no
+         user activity.
+         This value must be greater than zero, otherwise the device will immediately
+         fall asleep again as soon as it is awoken.
+    -->
+    <integer name="config_minimumScreenOffTimeout">7000</integer>
 </resources>
