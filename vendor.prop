@@ -228,9 +228,6 @@ persist.vendor.sensors.odl.adsp=true
 persist.vendor.sensors.support_direct_channel=false
 persist.vendor.sensors.allow_non_default_discovery=true
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # Volume steps
 ro.config.vc_call_vol_steps=10
 
