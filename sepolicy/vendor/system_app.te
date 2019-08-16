@@ -17,3 +17,10 @@ allow system_app apk_data_file:file { ioctl };
 allow system_app incremental_prop:file { read open };
 
 allow system_app sysfs_msm_subsys:dir { search };
+
+allow system_app sysfs_fps:file rw_file_perms;
+
+allow system_app kcal_dev:file rw_file_perms;
+allow system_app kcal_dev:dir search;
+
+allow system_app sysfs_fcharge:file { open read getattr write };

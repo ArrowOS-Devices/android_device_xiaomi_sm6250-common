@@ -14,3 +14,9 @@ allow hal_audio_default audio_socket:sock_file rw_file_perms;
 allow hal_audio_default system_suspend_hwservice:hwservice_manager find;
 
 allow hal_audio_default default_prop:file { getattr  map  open  read };
+
+# Dirac
+allow hal_audio_default audio_prop:file { open read getattr };
+allow hal_audio_default sysfs:dir { open read };
+get_prop(hal_audio_default, dirac_prop)
+set_prop(hal_audio_default, dirac_prop)

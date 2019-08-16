@@ -1,3 +1,7 @@
+# KCAL
+allow system_server kcal_dev:file rw_file_perms;
+allow system_server kcal_dev:dir r_dir_perms;
+
 # Smart charger
 allow system_server vendor_sysfs_battery_supply:file rw_file_perms;
 

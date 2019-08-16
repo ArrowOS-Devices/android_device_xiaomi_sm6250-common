@@ -17,6 +17,9 @@
 /data/vendor/goodix(/.*)?                                               u:object_r:fingerprint_data_file:s0
 /data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_data_file:s0
 
+# FPS Info
+/sys/class/drm/sde-crtc-0/measured_fps                                  u:object_r:sysfs_fps:s0
+
 # Hexagon DSP-side executable needed for Halide operation
 # This is labeled as public_adsprpcd_file as it needs to be read by apps
 # (e.g. Google Camera App)
@@ -24,6 +27,10 @@
 
 # IR
 /dev/spidev0.1                                                          u:object_r:lirc_device:s0
+
+# KCAL
+/sys/devices/platform/kcal_ctrl.0(/.*)?                                 u:object_r:kcal_dev:s0
+/sys/bus/platform/drivers/kcal_ctrl(/.*)?                               u:object_r:kcal_dev:s0
 
 # Light
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sm6250                                     u:object_r:hal_light_default_exec:s0

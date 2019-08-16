@@ -17,3 +17,9 @@ type sysfs_msm_boot, fs_type, sysfs_type;
 type sysfs_msm_subsys, sysfs_type, fs_type;
 
 type vendor_sysfs_iio, fs_type, sysfs_type;
+
+type sysfs_fps, sysfs_type, fs_type;
+
+type kcal_dev, sysfs_type, fs_type;
+
+type sysfs_fcharge, sysfs_type, fs_type;
