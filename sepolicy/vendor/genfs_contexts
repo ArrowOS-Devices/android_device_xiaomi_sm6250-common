@@ -88,3 +88,6 @@ genfscon sysfs /devices/virtual/misc/msm_multi_aac/wakeup20/*                   
 genfscon sysfs /devices/virtual/misc/msm_qcelp/wakeup21/*                                                                                                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_wma/wakeup22/*                                                                                                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup23/*                                                                                                       u:object_r:sysfs_wakeup:s0
+
+# USB force fastcharge
+genfscon sysfs /kernel/fast_charge/force_fast_charge                                                u:object_r:sysfs_fcharge:s0
