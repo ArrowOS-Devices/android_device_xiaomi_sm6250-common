@@ -1,0 +1,9 @@
+# FPS Info
+allow system_app sysfs_fps:file rw_file_perms;
+
+# KCAL
+allow system_app kcal_dev:file rw_file_perms;
+allow system_app kcal_dev:dir search;
+
+# USB Fastcharge
+allow system_app sysfs_fcharge:file { open read getattr write };

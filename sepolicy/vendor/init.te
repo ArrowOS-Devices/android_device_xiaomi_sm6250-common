@@ -1,0 +1,2 @@
+# USB Fastcharge
+allow init sysfs_fcharge:file { write open };
