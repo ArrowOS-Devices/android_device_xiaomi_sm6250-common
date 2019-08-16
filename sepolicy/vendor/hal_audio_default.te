@@ -1,0 +1,5 @@
+# Dirac
+allow hal_audio_default audio_prop:file { open read getattr };
+allow hal_audio_default sysfs:dir { open read };
+get_prop(hal_audio_default, dirac_prop)
+set_prop(hal_audio_default, dirac_prop)
