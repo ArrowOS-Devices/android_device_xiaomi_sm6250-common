@@ -688,4 +688,7 @@
         <item>1</item> <!-- COLOR_MODE_BOOSTED -->
         <item>2</item> <!-- COLOR_MODE_SATURATED -->
     </integer-array>
+
+    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
 </resources>
