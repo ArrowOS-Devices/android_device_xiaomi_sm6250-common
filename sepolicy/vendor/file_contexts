@@ -28,6 +28,9 @@
 # Light
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sm6250                                     u:object_r:hal_light_default_exec:s0
 
+# Per-boot files
+/data/per_boot(/.*)?                                                    u:object_r:per_boot_file:s0
+
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                                        u:object_r:persist_subsys_file:s0
 
