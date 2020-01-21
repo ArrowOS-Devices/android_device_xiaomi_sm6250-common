@@ -158,7 +158,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.xiaomi_sm6250
+    android.hardware.power@1.3-service.xiaomi_sm6250-libperfmgr
 
 # RCS
 PRODUCT_PACKAGES += \
