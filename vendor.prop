@@ -136,6 +136,14 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
+debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.use_phase_offsets_as_durations=1
+debug.sf.late.sf.duration=10500000
+debug.sf.late.app.duration=20500000
+debug.sf.early.sf.duration=16000000
+debug.sf.early.app.duration=33500000
+debug.sf.earlyGl.sf.duration=13500000
+debug.sf.earlyGl.app.duration=38000000
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
