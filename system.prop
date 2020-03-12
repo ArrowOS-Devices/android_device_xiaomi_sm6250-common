@@ -1,6 +1,10 @@
 # Apex
 ro.apex.updatable=true
 
+# ART
+dalvik.vm.dex2oat-filter=everything
+dalvik.vm.image-dex2oat-filter=everything
+
 # Audio
 media.stagefright.audio.sink=384
 af.fast.track.multiplier=2
