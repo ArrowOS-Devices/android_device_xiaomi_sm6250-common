@@ -27,6 +27,9 @@ ro.boot.fp.                             u:object_r:hal_fingerprint_prop:s0
 ro.boot.fpsensor                        u:object_r:hal_fingerprint_prop:s0
 sys.fp.                                 u:object_r:hal_fingerprint_prop:s0
 
+# Manufacture Prop
+ro.product.system.manufacturer          u:object_r:exported2_default_prop:s0
+
 # Media
 gpu.stats.debug.level                   u:object_r:vendor_default_prop:s0
 
