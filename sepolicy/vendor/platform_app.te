@@ -1,3 +1,6 @@
+# Face Unlock
+get_prop(platform_app, vendor_camera_prop)
+
 # System Info
 allow platform_app vendor_sysfs_battery_supply:dir search;
 allow platform_app vendor_sysfs_battery_supply:file { getattr open read }; 
