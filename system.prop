@@ -73,6 +73,9 @@ ro.netflix.bsp_rev=Q6250-19132-1
 # Perf
 ro.vendor.qti.sys.fw.bservice_enable=true
 
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
+
 # Qcom
 ro.vendor.qti.va_aosp.support=1
 
