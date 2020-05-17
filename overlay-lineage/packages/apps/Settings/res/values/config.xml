@@ -28,4 +28,7 @@
     <!-- Smart Cutoff enable -->
     <bool name="config_supportSmartCutoff">true</bool>
 
+    <!-- Smart Charging enable -->
+    <bool name="config_supportSmartCharging">true</bool>
+
 </resources>
