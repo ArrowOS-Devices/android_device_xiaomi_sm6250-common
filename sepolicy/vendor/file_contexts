@@ -16,3 +16,6 @@
 
 # FPS Info
 /sys/kernel/debug/dri/0/crtc97/fps                              u:object_r:sysfs_fps:s0
+
+# Touchboost
+/sys/module/msm_performance/parameters/touchboost		            u:object_r:sysfs_touchboost:s0
