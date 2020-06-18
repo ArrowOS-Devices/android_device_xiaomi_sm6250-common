@@ -56,3 +56,6 @@
 /sys/bus/iio/devices                                                                                                     u:object_r:vendor_sysfs_iio:s0
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:vadc@3100/iio:device0(/.*)?  u:object_r:vendor_sysfs_iio:s0
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.qcom,spmi:qcom,pm6150l@4:vadc@3100/iio:device1(/.*)? u:object_r:vendor_sysfs_iio:s0
+
+# Touchboost
+/sys/module/msm_performance/parameters/touchboost		        u:object_r:sysfs_touchboost:s0
