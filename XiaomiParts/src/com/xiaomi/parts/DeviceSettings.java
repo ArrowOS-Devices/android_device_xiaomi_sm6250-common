@@ -54,6 +54,9 @@ public class DeviceSettings extends PreferenceFragment implements
 
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
 
+    public static final String PREF_MSM_TOUCHBOOST = "touchboost";
+    public static final String MSM_TOUCHBOOST_PATH = "/sys/module/msm_performance/parameters/touchboost";
+
     private Preference mKcal;
     private Preference mClearSpeakerPref;
     private Preference mAmbientPref;
@@ -61,6 +64,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private SecureSettingListPreference mHeadsetType;
     private SecureSettingListPreference mPreset;
     private SecureSettingSwitchPreference mFastcharge;
+    private SecureSettingSwitchPreference mTouchboost;
     private static Context mContext;
 
     @Override
@@ -97,6 +101,14 @@ public class DeviceSettings extends PreferenceFragment implements
             startActivity(intent);
             return true;
         });
+
+        if (FileUtils.fileWritable(MSM_TOUCHBOOST_PATH)) {
+            mTouchboost = (SecureSettingSwitchPreference) findPreference(PREF_MSM_TOUCHBOOST);
+            mTouchboost.setChecked(FileUtils.getFileValueAsBoolean(MSM_TOUCHBOOST_PATH, true));
+            mTouchboost.setOnPreferenceChangeListener(this);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(PREF_MSM_TOUCHBOOST));
+        }
 
         boolean enhancerEnabled;
         try {
@@ -168,6 +180,10 @@ public class DeviceSettings extends PreferenceFragment implements
 
             case PREF_USB_FASTCHARGE:
                 FileUtils.setValue(USB_FASTCHARGE_PATH, (boolean) value);
+                break;
+
+            case PREF_MSM_TOUCHBOOST:
+                FileUtils.setValue(MSM_TOUCHBOOST_PATH, (boolean) value);
                 break;
 
             case PREF_KEY_FPS_INFO:
