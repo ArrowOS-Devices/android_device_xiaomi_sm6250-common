@@ -106,8 +106,9 @@ public class DeviceSettings extends PreferenceFragment implements
 
         if (FileUtils.fileWritable(MSM_TOUCHBOOST_PATH)) {
             mTouchboost = (SecureSettingSwitchPreference) findPreference(PREF_MSM_TOUCHBOOST);
-            mTouchboost.setChecked(FileUtils.getFileValueAsBoolean(MSM_TOUCHBOOST_PATH, true));
-            mTouchboost.setOnPreferenceChangeListener(this);
+            mTouchboost.setEnabled(Touchboost.isSupported());
+            mTouchboost.setChecked(Touchboost.isCurrentlyEnabled(this.getContext()));
+            mTouchboost.setOnPreferenceChangeListener(new Touchboost(getContext()));
         } else {
             getPreferenceScreen().removePreference(findPreference(PREF_MSM_TOUCHBOOST));
         }
@@ -182,10 +183,6 @@ public class DeviceSettings extends PreferenceFragment implements
 
             case PREF_USB_FASTCHARGE:
                 FileUtils.setValue(USB_FASTCHARGE_PATH, (boolean) value);
-                break;
-
-            case PREF_MSM_TOUCHBOOST:
-                FileUtils.setValue(MSM_TOUCHBOOST_PATH, (boolean) value);
                 break;
 
             case PREF_KEY_FPS_INFO:
