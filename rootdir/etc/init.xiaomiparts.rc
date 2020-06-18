@@ -20,6 +20,10 @@ on boot
   chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_min
   chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_val
 
+# Touchboost permissions
+  chown system system /sys/module/msm_performance/parameters/touchboost
+  chmod 0660 /sys/module/msm_performance/parameters/touchboost
+
 # USB Fastcharge permissions
   chown system system /sys/kernel/fast_charge/force_fast_charge
   chmod 0660 /sys/kernel/fast_charge/force_fast_charge

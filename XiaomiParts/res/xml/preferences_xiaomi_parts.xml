@@ -44,6 +44,20 @@
 
     <PreferenceCategory
 
+        android:key="boost"
+        android:title="@string/boost_category" >
+
+        <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
+            android:key="touchboost"
+            android:defaultValue="false"
+            android:title="@string/touchboost_title"
+            android:icon="@drawable/ic_boost"
+            android:summary="@string/touchboost_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+
             android:title="@string/ambient_doze">
 
         <Preference
