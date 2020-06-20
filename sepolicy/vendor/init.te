@@ -4,6 +4,8 @@ allow init same_process_hal_file:file execute;
 
 allow init adsprpcd_file:file mounton;
 
+allow init su:process { noatsecure  rlimitinh  siginh  transition };
+
 allow init sysfs_fcharge:file { write open };
 
 allow init per_boot_file:file ioctl;
