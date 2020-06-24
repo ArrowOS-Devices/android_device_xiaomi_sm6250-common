@@ -30,6 +30,7 @@ import androidx.preference.PreferenceCategory;
 
 import com.xiaomi.parts.kcal.KCalSettingsActivity;
 import com.xiaomi.parts.ambient.AmbientGesturePreferenceActivity;
+import com.xiaomi.parts.speaker.ClearSpeakerActivity;
 import com.xiaomi.parts.preferences.CustomSeekBarPreference;
 import com.xiaomi.parts.preferences.SecureSettingListPreference;
 import com.xiaomi.parts.preferences.SecureSettingSwitchPreference;
@@ -52,7 +53,10 @@ public class DeviceSettings extends PreferenceFragment implements
 
     public static final String PREF_KEY_FPS_INFO = "fps_info";
 
+    private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
+
     private Preference mKcal;
+    private Preference mClearSpeakerPref;
     private Preference mAmbientPref;
     private SecureSettingSwitchPreference mEnableDirac;
     private SecureSettingListPreference mHeadsetType;
@@ -87,6 +91,13 @@ public class DeviceSettings extends PreferenceFragment implements
                 startActivity(intent);
                 return true;
             }
+        });
+
+        mClearSpeakerPref = (Preference) findPreference(PREF_CLEAR_SPEAKER);
+        mClearSpeakerPref.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), ClearSpeakerActivity.class);
+            startActivity(intent);
+            return true;
         });
 
         boolean enhancerEnabled;
