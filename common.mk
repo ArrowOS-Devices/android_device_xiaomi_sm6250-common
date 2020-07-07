@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BluetoothQti
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap
