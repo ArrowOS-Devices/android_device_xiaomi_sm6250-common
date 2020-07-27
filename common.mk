@@ -22,6 +22,12 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
+# Enforce native interfaces of product partition as VNDK
+PRODUCT_PRODUCT_VNDK_VERSION := current
+
+# Enforce java interfaces of product partition
+PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
