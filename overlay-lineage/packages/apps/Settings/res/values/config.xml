@@ -21,4 +21,8 @@
          3 = right side
     -->
     <integer name="config_fingerprintSensorLocation">3</integer>
+
+    <!-- Battery Health enable -->
+    <bool name="config_supportBatteryHealth">true</bool>
+
 </resources>
