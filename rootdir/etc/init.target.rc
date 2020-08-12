@@ -676,3 +676,10 @@ service stoppktlog /system/vendor/bin/iwpriv wlan0 pktlog 0
 on property:persist.sys.device_provisioned=1
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,7
     setprop dalvik.vm.dex2oat-threads 6
+
+# Smart Charging
+on boot 
+chown system system /sys/class/power_supply/battery/charging_enabled
+chmod 0666 /sys/class/power_supply/battery/charging_enabled
+chown system system /sys/class/power_supply/battery/input_suspend
+chmod 0666 /sys/class/power_supply/battery/input_suspend
