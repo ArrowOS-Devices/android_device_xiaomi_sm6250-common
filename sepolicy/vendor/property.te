@@ -1,11 +1,11 @@
-type vendor_ifaa_prop, property_type;
+vendor_internal_prop(vendor_ifaa_prop)
 
-type vendor_power_prop, property_type;
+vendor_internal_prop(vendor_power_prop)
 
-type vendor_device_prop, property_type;
+vendor_internal_prop(vendor_device_prop)
 
-type vendor_fp_prop, property_type;
+vendor_internal_prop(vendor_fp_prop)
 
-type vendor_dirac_prop, property_type;
+vendor_internal_prop(vendor_dirac_prop)
 
-type vendor_thermal_normal_prop, property_type;
+vendor_internal_prop(vendor_thermal_normal_prop)
