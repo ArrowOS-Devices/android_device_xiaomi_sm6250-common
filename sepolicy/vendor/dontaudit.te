@@ -63,3 +63,7 @@ dontaudit untrusted_app_all sysfs_net:dir search;
 
 # Thermal
 dontaudit vendor_thermal-engine self:capability dac_override;
+
+# Apps are no longer allowed open access to /dev/ashmem, unless they
+# target API level < Q.
+dontaudit untrusted_app ashmem_device:chr_file open;
