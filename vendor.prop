@@ -132,6 +132,9 @@ vendor.qcom.bluetooth.soc=cherokee
 # Camera
 camera.disable_zsl_mode=1
 
+# Camera Aux Package list
+vendor.camera.aux.packagelist=com.google.android.GoogleCamera,org.codeaurora.snapcam,com.android.camera
+
 # CNE
 persist.vendor.cne.feature=1
 
