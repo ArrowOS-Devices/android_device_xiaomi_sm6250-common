@@ -69,6 +69,10 @@ vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
 
+# Perf
+vendor/lib64/libqti-perfd-client.so
+vendor/lib64/vendor.qti.hardware.perf@2.0.so
+
 # Permissions
 etc/permissions/privapp-permissions-qti.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
@@ -289,8 +293,6 @@ vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti
 vendor/bin/hw/vendor.qti.hardware.cvp@1.0-service
 vendor/bin/hw/vendor.qti.hardware.display.allocator-service
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
@@ -602,8 +604,6 @@ vendor/etc/init/vendor.qti.hardware.cvp@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc
 vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.fstman@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
@@ -659,11 +659,6 @@ vendor/etc/mixer_paths_qrd.xml
 vendor/etc/mixer_paths_wcd937x.xml
 vendor/etc/mixer_paths_wcd937xqrd.xml
 vendor/etc/msm_irqbalance.conf
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
 vendor/etc/permissions/android.hardware.audio.low_latency.xml
 vendor/etc/permissions/android.hardware.audio.pro.xml
 vendor/etc/permissions/android.hardware.bluetooth.xml
@@ -706,7 +701,6 @@ vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
 vendor/etc/permissions/vendor.qti.hardware.factory.xml
 vendor/etc/PinkNoise.wav
 vendor/etc/pm_test_item_config.xml
-vendor/etc/powerhint.xml
 vendor/etc/public.libraries.txt
 vendor/etc/pushfiles.sh
 vendor/etc/qc.xml
@@ -1145,7 +1139,6 @@ vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.cvp@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
@@ -1387,8 +1380,6 @@ vendor/lib/libops.so
 vendor/lib/libopus.so
 vendor/lib/libpdmapper.so
 vendor/lib/libpdnotifier.so
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
 vendor/lib/libperipheral_client.so
 -vendor/lib/libplatformconfig.so
 vendor/lib/libpvr.so
@@ -1420,11 +1411,6 @@ vendor/lib/libqseed3.so
 vendor/lib/libqservice.so
 vendor/lib/libqsocket.so
 vendor/lib/libQTEEConnector_vendor.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/libqti-iopd.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
 vendor/lib/libqti-utils.so
 vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/libqtigef.so
@@ -1671,8 +1657,6 @@ vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
 vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
 vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib/vendor.qti.hardware.qseecom@1.0.so
 vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
@@ -1928,7 +1912,6 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.cvp@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
@@ -1962,7 +1945,6 @@ vendor/lib64/liba2dpoffload.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
-vendor/lib64/libadaptlaunch.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libadsp_default_listener.so
@@ -2121,7 +2103,6 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/liblbs_core.so
-vendor/lib64/liblearningmodule.so
 vendor/lib64/liblistenjni.so
 vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libllvm-glnext.so
@@ -2141,8 +2122,6 @@ vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libmemperfd.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
 vendor/lib64/libmfido.so
 vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmiai_supernight.so
@@ -2209,8 +2188,6 @@ vendor/lib64/libOpenCL.so
 vendor/lib64/libops.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
 vendor/lib64/libperipheral_client.so
 -vendor/lib64/libplatformconfig.so
 vendor/lib64/libprekill.so
@@ -2244,11 +2221,6 @@ vendor/lib64/libqseed3.so
 vendor/lib64/libqservice.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/libqti-iopd.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/libqtigef.so
@@ -2458,8 +2430,6 @@ vendor/lib64/vendor.qti.hardware.fstman@1.0.so
 vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
 vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
