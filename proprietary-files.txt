@@ -68,6 +68,10 @@ vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
 
+# Perf
+vendor/lib64/libqti-perfd-client.so
+vendor/lib64/vendor.qti.hardware.perf@2.0.so
+
 # Permissions
 etc/permissions/privapp-permissions-qti.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
@@ -246,8 +250,6 @@ vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/bin/hw/vendor.qti.hardware.cvp@1.0-service
 vendor/bin/hw/vendor.qti.hardware.display.allocator-service
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
 vendor/bin/hw/vendor.qti.hardware.servicetracker@1.1-service
 vendor/bin/hw/vendor.qti.hardware.vibrator@1.2-service
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
@@ -429,8 +431,6 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.cvp@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
 vendor/etc/init/vendor.qti.hardware.servicetracker@1.1-service.rc
 vendor/etc/init/vendor.qti.hardware.vibrator@1.2-service.rc
 vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
@@ -453,12 +453,6 @@ vendor/etc/media_codecs_google_video.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/mixer_paths_wcd937x.xml
 vendor/etc/msm_irqbalance.conf
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
 vendor/etc/public.libraries.txt
 vendor/etc/qdcm_calib_data_ft8756_video_mode_dsi_huaxing_panel.xml
 vendor/etc/qdcm_calib_data_nt36675_video_mode_dsi_tianma_panel.xml
@@ -689,7 +683,6 @@ vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.cvp@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.servicetracker@1.1-impl.so
 vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so
 vendor/lib/hw/vulkan.atoll.so
@@ -885,8 +878,6 @@ vendor/lib/libops.so
 vendor/lib/libopus.so
 vendor/lib/libpdmapper.so
 vendor/lib/libpdnotifier.so
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
 vendor/lib/libperipheral_client.so
 -vendor/lib/libplatformconfig.so
 vendor/lib/libq3dtools_adreno.so
@@ -914,11 +905,6 @@ vendor/lib/libQSEEComAPI.so
 vendor/lib/libqseed3.so
 vendor/lib/libqservice.so
 vendor/lib/libqsocket.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/libqti-iopd.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
 vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/libqtigef.so
 vendor/lib/libqtikeymaster4.so
@@ -1119,8 +1105,6 @@ vendor/lib/vendor.qti.hardware.display.mapper@2.0.so
 vendor/lib/vendor.qti.hardware.display.mapper@3.0.so
 vendor/lib/vendor.qti.hardware.display.mapperextensions@1.0.so
 vendor/lib/vendor.qti.hardware.display.mapperextensions@1.1.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.0.so
@@ -1339,7 +1323,6 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.cvp@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.1-impl.so
 vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so
 vendor/lib64/hw/vulkan.atoll.so
@@ -1360,7 +1343,6 @@ vendor/lib64/liba2dpoffload.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
-vendor/lib64/libadaptlaunch.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libadsp_default_listener.so
@@ -1496,7 +1478,6 @@ vendor/lib64/libjson.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/liblbs_core.so
-vendor/lib64/liblearningmodule.so
 vendor/lib64/liblistenjni.so
 vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libllvm-glnext.so
@@ -1514,8 +1495,6 @@ vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libmemperfd.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
 vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmiai_supernight.so
 vendor/lib64/libmialgo_basic.so
@@ -1574,8 +1553,6 @@ vendor/lib64/libOpenCL.so
 vendor/lib64/libops.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
 vendor/lib64/libperipheral_client.so
 -vendor/lib64/libplatformconfig.so
 vendor/lib64/libprekill.so
@@ -1605,11 +1582,6 @@ vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libqservice.so
 vendor/lib64/libqsocket.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/libqti-iopd.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
 vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libqtikeymaster4.so
@@ -1772,8 +1744,6 @@ vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so
 vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so
 vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
 vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so
