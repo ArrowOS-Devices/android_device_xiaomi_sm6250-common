@@ -265,7 +265,6 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
 vendor/bin/hw/android.hardware.cas@1.1-service
-vendor/bin/hw/android.hardware.configstore@1.1-service
 vendor/bin/hw/android.hardware.contexthub@1.0-service
 vendor/bin/hw/android.hardware.drm@1.0-service
 vendor/bin/hw/android.hardware.drm@1.2-service.clearkey
@@ -551,7 +550,6 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
 vendor/etc/init/android.hardware.cas@1.1-service.rc
-vendor/etc/init/android.hardware.configstore@1.1-service.rc
 vendor/etc/init/android.hardware.contexthub@1.0-service.rc
 vendor/etc/init/android.hardware.drm@1.0-service.rc
 vendor/etc/init/android.hardware.drm@1.2-service.clearkey.rc
@@ -734,7 +732,6 @@ vendor/etc/r_submix_audio_policy_configuration.xml
 vendor/etc/sap.conf
 vendor/etc/scve/facereco/gModel.dat
 vendor/etc/sec_config
-vendor/etc/seccomp_policy/configstore@1.1.policy
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/etc/selinux/plat_pub_versioned.cil
 vendor/etc/selinux/plat_sepolicy_vers.txt
