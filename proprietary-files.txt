@@ -513,6 +513,11 @@ vendor/lib64/libcvp_common.so
 vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
+# Dirac
+vendor/etc/diracmobile.config
+vendor/lib/libDiracAPI_SHARED.so
+vendor/lib/soundfx/libdirac.so
+
 # DPM
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
