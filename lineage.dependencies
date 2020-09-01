@@ -2,5 +2,11 @@
   {
     "repository": "android_hardware_xiaomi",
     "target_path": "hardware/xiaomi"
+  },
+  {
+    "remote": "github",
+    "repository": "kdrag0n/proton-clang",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-12",
+    "branch": "master"
   }
 ]
