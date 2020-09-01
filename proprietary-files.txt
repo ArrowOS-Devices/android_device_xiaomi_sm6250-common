@@ -1,3 +1,8 @@
+# Dirac
+vendor/etc/diracmobile.config
+vendor/lib/libDiracAPI_SHARED.so
+vendor/lib/soundfx/libdirac.so
+
 # DPM
 product/bin/dpmd
 product/etc/dpm/dpm.conf
