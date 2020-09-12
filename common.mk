@@ -191,6 +191,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Pixel Overlay
+PRODUCT_PACKAGES += \
+   PixelOverlay
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sm6250-libperfmgr \
