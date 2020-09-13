@@ -51,6 +51,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+    product/lib64/libdpmframework.so)
+        patchelf --add-needed "libcutils_shim.so" "${2}"
+        ;;
     vendor/lib64/hw/camera.qcom.so)
         patchelf --remove-needed "libMegviiFacepp-0.5.2.so" "${2}"
         patchelf --remove-needed "libmegface.so" "${2}"
