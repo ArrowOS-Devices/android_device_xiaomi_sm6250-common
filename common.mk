@@ -193,7 +193,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Pixel Overlay
 PRODUCT_PACKAGES += \
-   PixelOverlay
+   PixelOverlay \
+   PixelSettingsOverlay
 
 # Power
 PRODUCT_PACKAGES += \
