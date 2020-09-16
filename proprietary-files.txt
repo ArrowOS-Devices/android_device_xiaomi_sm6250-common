@@ -6,7 +6,7 @@ vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
 # DPM
 product/bin/dpmd
 product/etc/dpm/dpm.conf
-product/etc/init/dpmd.rc
+#product/etc/init/dpmd.rc
 product/etc/permissions/com.qti.dpmframework.xml
 product/etc/permissions/dpmapi.xml
 product/framework/com.qti.dpmframework.jar
