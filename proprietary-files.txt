@@ -459,7 +459,6 @@ vendor/etc/media_codecs_google_video.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/mixer_paths_wcd937x.xml
 vendor/etc/msm_irqbalance.conf
-vendor/etc/public.libraries.txt
 vendor/etc/qdcm_calib_data_ft8756_video_mode_dsi_huaxing_panel.xml
 vendor/etc/qdcm_calib_data_nt36675_video_mode_dsi_tianma_panel.xml
 vendor/etc/r_submix_audio_policy_configuration.xml
