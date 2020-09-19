@@ -13,3 +13,7 @@ persist.device_config.runtime_native.usap_pool_enabled=true
 
 # Spoof
 ro.build.fingerprint=google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys
+
+# Blur
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
