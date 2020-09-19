@@ -225,7 +225,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/pixel \
-    hardware/xiaomi
+    hardware/xiaomi \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 
 # Telephony
 PRODUCT_PACKAGES += \
