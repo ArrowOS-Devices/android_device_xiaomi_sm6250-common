@@ -83,6 +83,9 @@ KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-12.0.0/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 TARGET_KERNEL_CONFIG := cust_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6250
+BOARD_VENDOR_KERNEL_MODULES += \
+    $(COMMON_PATH)/kernel-modules/rmnet_perf.ko \
+    $(COMMON_PATH)/kernel-modules/rmnet_shs.ko
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
