@@ -79,6 +79,9 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := 12
 TARGET_KERNEL_CONFIG := cust_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6250
+BOARD_VENDOR_KERNEL_MODULES += \
+    $(COMMON_PATH)/kernel-modules/rmnet_perf.ko \
+    $(COMMON_PATH)/kernel-modules/rmnet_shs.ko
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
