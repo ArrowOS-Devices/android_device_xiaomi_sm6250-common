@@ -9,3 +9,6 @@ ro.product.system.manufacturer                  u:object_r:exported2_default_pro
 
 # Dirac
 persist.audio.dirac                             u:object_r:dirac_prop:s0
+
+# Dolby
+persist.vendor.dolby.loglevel                   u:object_r:vendor_dolby_loglevel_prop:s0
