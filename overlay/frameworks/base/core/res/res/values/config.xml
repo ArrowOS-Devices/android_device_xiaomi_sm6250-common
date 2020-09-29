@@ -290,8 +290,22 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
     -->
-    <string name="config_mainBuiltInDisplayCutout">
-        M 0,0 H -36 V 100 H 36 V 0 H 0 Z
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">
+        M 0,58 a 32,32 0 1 0 64,0 32,32 0 1 0 -64,0 Z
+    </string>
+
+    <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
+         one single bounding rect per device edge to the app via
+         {@link DisplayCutout#getBoundingRect}. Note that this path should try to match the visual
+         appearance of the cutout as much as possible, and may be smaller than
+         config_mainBuiltInDisplayCutout
+         -->
+    <string name="config_mainBuiltInDisplayCutoutRectApproximation">
+        M 0.0,0.0
+        h 64
+        v 100
+        h -64
+        Z
     </string>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
