@@ -252,7 +252,6 @@ vendor/bin/hw/android.hardware.audio@2.0-service
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
-vendor/bin/hw/android.hardware.drm@1.0-service
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti
@@ -407,7 +406,6 @@ vendor/etc/init/android.hardware.audio@2.0-service.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
-vendor/etc/init/android.hardware.drm@1.0-service.rc
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc
@@ -664,7 +662,6 @@ vendor/lib/hw/android.hardware.audio@5.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
-vendor/lib/hw/android.hardware.drm@1.0-impl.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.gnss@2.0-impl-qti.so
 vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
@@ -780,10 +777,8 @@ vendor/lib/libdng_sdkvendor.so
 vendor/lib/libdpmqmihal.so
 vendor/lib/libdpps.so
 vendor/lib/libdrc.so
-vendor/lib/libdrm.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
-vendor/lib/libdrmutils.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -1431,10 +1426,8 @@ vendor/lib64/libdisplayqos.so
 vendor/lib64/libdng_sdkvendor.so
 vendor/lib64/libdpmqmihal.so
 vendor/lib64/libdpps.so
-vendor/lib64/libdrm.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
-vendor/lib64/libdrmutils.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libeffects.so
