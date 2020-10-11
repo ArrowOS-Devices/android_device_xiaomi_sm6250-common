@@ -224,8 +224,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
-# ANXCamera
--include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
-
 # Inherit proprietary blobs
 -include vendor/xiaomi/sm6250-common/BoardConfigVendor.mk
