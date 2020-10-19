@@ -434,9 +434,6 @@ vendor/etc/lm/prekill/prekill_6GB.data
 vendor/etc/lm/PreKillFeature.xml
 vendor/etc/lowi.conf
 vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_google_audio.xml
-vendor/etc/media_codecs_google_telephony.xml
-vendor/etc/media_codecs_google_video.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/msm_irqbalance.conf
 vendor/etc/qdcm_calib_data_ft8756_video_mode_dsi_huaxing_panel.xml
