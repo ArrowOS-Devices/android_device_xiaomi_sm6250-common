@@ -433,8 +433,6 @@ vendor/etc/lm/prekill/prekill_4GB.data
 vendor/etc/lm/prekill/prekill_6GB.data
 vendor/etc/lm/PreKillFeature.xml
 vendor/etc/lowi.conf
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_performance.xml
 vendor/etc/msm_irqbalance.conf
 vendor/etc/qdcm_calib_data_ft8756_video_mode_dsi_huaxing_panel.xml
 vendor/etc/qdcm_calib_data_nt36675_video_mode_dsi_tianma_panel.xml
@@ -474,7 +472,6 @@ vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 vendor/etc/SVIConfig.xml
-vendor/etc/system_properties.xml
 vendor/etc/thermal-engine.conf
 -vendor/etc/vintf/compatibility_matrix.xml
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml
