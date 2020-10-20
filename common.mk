@@ -115,13 +115,15 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    GoogleCameraGo
+    GoogleCameraGo \
+    libgui_vendor
 
 PRODUCT_PACKAGES += \
     libshim_megvii
 
 PRODUCT_PACKAGES += \
-    libgui_vendor
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service_64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
