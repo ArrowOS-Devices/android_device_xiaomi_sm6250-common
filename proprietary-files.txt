@@ -785,7 +785,6 @@ vendor/lib/libqsap_sdk.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libqseed3.so
 vendor/lib/libqsocket.so
-vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/libqtigef.so
 vendor/lib/libqtikeymaster4.so
 vendor/lib/librcc.so
@@ -1307,7 +1306,6 @@ vendor/lib64/libqsap_sdk.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libqsocket.so
-vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/librcc.so
