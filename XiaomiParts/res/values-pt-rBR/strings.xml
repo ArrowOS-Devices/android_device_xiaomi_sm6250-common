@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2020 The Xiaomi-SM6250 Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="advanced_settings">Xiaomi Parts</string>
+    <string name="advanced_settings_summary">Ajustes específicos do kernel</string>
+
+    <string name="display_title">Tela</string>
+
+    <!-- KCal -->
+    <string name="device_kcal_title">Calibração de cores da tela</string>
+    <string name="kcal_enabled_summary">Calibrar a exibição das cores na tela utilizando o KCAL</string>
+
+    <string name="audio_title">Áudio</string>
+
+    <!-- Dirac settings -->
+    <string name="dirac_title">Otimizador de áudio</string>
+    <string name="dirac_summary">Otimize a qualidade do áudio</string>
+    <string name="dirac_headset_title">Escolha o tipo de fone de ouvido</string>
+    <string name="dirac_preset_title">Escolha uma predefinição</string>
+
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_default">Fone-01</string>
+    <string name="dirac_headset_earbuds">Fone-02</string>
+    <string name="dirac_headset_in_ear_2013">Fone-03</string>
+    <string name="dirac_headset_piston_1">Fone-04</string>
+    <string name="dirac_headset_general">Fone-05</string>
+    <string name="dirac_headset_general_inear">Fone-06</string>
+    <string name="dirac_headset_piston_basic">Fone-07</string>
+    <string name="dirac_headset_piston_2">Fone-08</string>
+    <string name="dirac_headset_piston_standard">Fone-09</string>
+    <string name="dirac_headset_headphone">Fone-10</string>
+    <string name="dirac_headset_piston_youth">Fone-11</string>
+    <string name="dirac_headset_piston_color">Fone-12</string>
+    <string name="dirac_headset_in_ear">Fone-13</string>
+    <string name="dirac_headset_capsule">Fone-14</string>
+    <string name="dirac_headset_in_ear_pro">Fone-15</string>
+    <string name="dirac_headset_comfort">Fone-16</string>
+    <string name="dirac_headset_reduction_noise">Fone-17</string>
+    <string name="dirac_headset_cancelling">Fone-18</string>
+    <string name="dirac_headset_half_in_ear">Fone-19</string>
+    <string name="dirac_headset_in_ear2">Fone-20</string>
+    <string name="dirac_headset_earphone_basic">Fone-21</string>
+    <string name="dirac_headset_earphone">Fone-22</string>
+
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">Padrão</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Clássico</string>
+    <string name="dirac_preset_hiphop">Hip Hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Electrônica</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dance</string>
+    <string name="dirac_preset_metal">Metal</string>
+
+    <!-- kcal -->
+    <string name="advanced_settings_kcal">Calibração de cores da tela</string>
+    <string name="cat_colormanagement">Configurações de cor</string>
+    <string name="cat_calibration">Calibração da tela</string>
+
+    <string name="kcal_enabled">Ligado</string>
+    <string name="kcal_disabled">Desligado</string>
+    <string name="set_on_boot">Habilitado na inicialização</string>
+    <string name="color_red">Vermelho</string>
+    <string name="color_green">Verde</string>
+    <string name="color_blue">Azul</string>
+    <string name="color_minimum">Mínimo</string>
+    <string name="saturation">Saturação</string>
+    <string name="value">Valor</string>
+    <string name="contrast">Contraste</string>
+    <string name="hue">Matiz</string>
+    <string name="grayscale">Tela em tons de cinza</string>
+
+    <string name="presets_dialog_title">Selecione uma predefinição</string>
+    <!-- Presets -->
+    <string name="preset_default">Perfil-01</string>
+    <string name="preset_version_1">Perfil-02</string>
+    <string name="preset_version_2">Perfil-03</string>
+    <string name="preset_version_3">Perfil-04</string>
+    <string name="preset_triluminous">Perfil-05</string>
+    <string name="preset_deep_black_white">Perfil-06</string>
+    <string name="preset_deep_natural">Perfil-07</string>
+    <string name="preset_cool_amoled">Perfil-08</string>
+    <string name="preset_extreme_amoled">Perfil-09</string>
+    <string name="preset_warm_amoled">Perfil-10</string>
+    <string name="preset_hybrid_mamba">Perfil-11</string>
+    <string name="preset_sir_banger">Perfil-12</string>
+    <string name="preset_gerard_extrem_cool">Perfil-13</string>
+    <string name="preset_yoyoz808">Perfil-14</string>
+    <string name="preset_purian">Perfil-15</string>
+    <string name="preset_deep_black_colorful">Perfil-16</string>
+    <string name="preset_vomer_deep_rich">Perfil-17</string>
+    <string name="preset_franco">Perfil-18</string>
+    <string name="preset_wrinklefree_cool">Perfil-19</string>
+    <string name="preset_harley_tech">Perfil-20</string>
+    <string name="preset_perfection">Perfil-21</string>
+    <string name="preset_banged_up">Perfil-22</string>
+    <string name="preset_sim_cooler">Perfil-23</string>
+    <string name="preset_obsanity">Perfil-24</string>
+    <string name="preset_obsanity_ips">Perfil-25</string>
+
+    <!-- USB fastcharge -->
+    <string name="usb_fastcharge_title">Carregamento rápido USB</string>
+    <string name="fastcharge_title">Habilitar carregamento rápido USB</string>
+    <string name="fastcharge_summary">Carregue até 900mA quando conectado a um computador via porta USB 3.0</string>
+
+    <!-- menu -->
+    <string name="kcal_presets" translatable="false">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Redefinir</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">Padrão</string>
+    <string name="custom_seekbar_default_value_to_set">Valor padrão: <xliff:g id="v">%s</xliff:g>\nLong press to set</string>
+    <string name="custom_seekbar_default_value_is_set">O valor padrão definido é</string>
+
+    <!-- Log Tile -->
+    <string name="quick_settings_log_tile_label">LogTile</string>
+    <string name="quick_settings_log_tile_dialog_title">Opções</string>
+    <string name="cannot_get_su">A ação falhou devido à falta de acesso de superusuário</string>
+
+    <!-- FPS Info -->
+    <string name="fps_info_title">Sobreposição de informações FPS</string>
+    <string name="fps_info_summary">Mostrar sobreposição com quadros atuais por segundo</string>
+
+    <!-- Ambient gesture haptic feedback -->
+    <string name="ambient_gesture_haptic_feedback">Retorno tátil</string>
+    <string name="ambient_gesture_haptic_feedback_summary">Vibrar quando um gesto de tela ambiente for detectado</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_doze">Doze</string>
+    <string name="ambient_display_xiaomi">Xiaomi Doze</string>
+    <string name="advanced_doze_summary">Tela ambiente</string>
+    <string name="ambient_display_enable_title">Gestos de tela ambiente</string>
+    <string name="ambient_display_enable_summary">Ativar a tela ao receber notificações</string>
+    <string name="ambient_display_gestures_title">Gestos de tela ambiente</string>
+    <string name="ambient_display_gestures_summary">Gestos adicionais para ativar a tela</string>
+    <string name="ambient_display_summary">Ativar a tela ao receber notificações</string>
+    <string name="ambient_display_summary_on">A tela será ativada ao receber notificações</string>
+    <string name="ambient_display_summary_off">A tela não será ativada ao receber notificações</string>
+
+    <!-- Doze sensor -->
+    <string name="tilt_sensor_title">Sensor de inclinação</string>
+    <string name="pickup_sensor_title">Sensor de captação</string>
+    <string name="proximity_sensor_title">Sensor de proximidade</string>
+
+    <!-- Hand wave gesture -->
+    <string name="hand_wave_gesture_title">Movimento da mão</string>
+    <string name="hand_wave_gesture_summary">Mostrar notificações ao mover a mão sobre a tela</string>
+    <string name="hand_wave_gesture_flat_title">Detectar orientação</string>
+    <string name="hand_wave_gesture_flat_summary">Mostrar apenas se o telefone estiver voltado para cima em uma superfície plana</string>
+
+    <!-- Pick-up gesture -->
+    <string name="pick_up_gesture_title">Pegar</string>
+    <string name="pick_up_gesture_summary">Mostrar notificações ao pegar</string>
+
+    <!-- Pocket gesture -->
+    <string name="pocket_gesture_title">Bolso</string>
+    <string name="pocket_gesture_summary">Mostrar notificações ao remover do bolso</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Ligar ao movimentar</string>
+    <string name="proximity_wake_enable_title">Ligar ao movimentar</string>
+    <string name="proximity_wake_enable_summary">Ligar ao movimentar a mão sobre a tela</string>
+
+    <!-- Label for feature switch -->
+    <string name="switch_bar_on">Ligado</string>
+
+    <!-- Label for feature switch -->
+    <string name="switch_bar_off">Desligado</string>
+
+    <!-- Speaker -->
+    <string name="speaker_category">Auto-falante</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Limpar auto-falante</string>
+    <string name="clear_speaker_summary">Reproduza um áudio de 30 segundos para limpar o alto-falante</string>
+    <string name="clear_speaker_description">Execute este recurso uma ou duas vezes se descobrir que o alto-falante está ligeiramente bloqueado por poeira. Defina o volume da mídia para o máximo.</string>
+
+    <!-- Touchboost -->
+    <string name="boost_title">Suavizar o toque</string>
+    <string name="touchboost_title">Habilitar suavização de toque</string>
+    <string name="touchboost_summary">Habilite para uma experiência de toque mais agradável</string>
+
+    <!-- Selinux Switch -->
+    <string name="selinux_category">SELinux</string>
+    <string name="selinux_explanation_summary">SELinux é um conjunto de modificações do kernel e ferramentas de espaço do usuário. Alterar os modos pode causar efeitos indesejados. Use por sua conta e risco.</string>
+    <string name="selinux_mode_title">Modo SELinux</string>
+    <string name="selinux_permissive_summary">Permissivo</string>
+    <string name="selinux_enforcing_summary">Forçando</string>
+    <string name="selinux_persistence_title">Habilitar durante a inicialização</string>
+    <string name="selinux_persistence_summary">Restaure o modo SELinux acima definido a cada inicialização</string>
+    <string name="selinux_permissive_toast_title">SELinux definido como permissivo!</string>
+    <string name="selinux_enforcing_toast_title">SELinux definido para forçando!</string>
+
+</resources>
