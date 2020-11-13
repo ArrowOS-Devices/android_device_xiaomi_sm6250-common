@@ -53,4 +53,12 @@
     <!-- Help texts -->
     <string name="doze_settings_help_title">Ajuda</string>
     <string name="doze_settings_help_text">Estes recursos usam eventos de sensores para lançar um pulso de notificação doze. O sensor escolhido só é ativado quando o dispositivo recebe uma notificação, isso ajuda a reduzir o uso da bateria. Há também uma opção para ativar o sensor escolhido assim que a tela desliga, isso causará maior uso da bateria.</string>
+
+    <!-- Doze Tile Service -->
+    <string name="ambient_display_gestures_title">Gestos de tela ambiente</string>
+
+    <!-- Wake on gesture -->
+    <string name="wake_on_gesture_title">Despertar com gestos</string>
+    <string name="wake_on_gesture_summary">Desperte o dispositivo em vez de pulsar notificações em eventos de gestos</string>
+
 </resources>
