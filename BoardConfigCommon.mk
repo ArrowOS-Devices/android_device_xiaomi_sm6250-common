@@ -60,6 +60,7 @@ endif
 
 # Display
 TARGET_SCREEN_DENSITY := 440
+TARGET_USES_DRM_PP := true
 TARGET_USES_HWC2 := true
 
 # Filesystem
