@@ -159,6 +159,9 @@ vendor/lib64/vendor.qti.hardware.perf@2.0.so
 etc/permissions/privapp-permissions-qti.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 
+# Power-off charging daemon - from qssi-user 11 RKQ1.200826.002 V12.0.1.0.RJWINXM release-keys
+bin/charger:bin/charger
+
 # QMI
 etc/sysconfig/qti_whitelist.xml
 etc/permissions/qti_libpermissions.xml
