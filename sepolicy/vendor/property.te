@@ -1,2 +1,7 @@
+type hal_fingerprint_prop, property_type;
+type mlipay_prop, property_type;
+type thermal_engine_prop, property_type;
+type lirc_prop, property_type;
+
 # Dirac
 type dirac_prop, property_type;
