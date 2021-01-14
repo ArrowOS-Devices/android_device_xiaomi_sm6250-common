@@ -45,6 +45,9 @@ vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 # DPM
 persist.dpm.feature=1
 
+#GBoard
+ro.com.google.ime.kb_pad_port_b=1
+
 # HVDCP
 persist.vendor.cp.taper_term_mv=6500
 persist.vendor.cp.fcc_main_ua=400000
