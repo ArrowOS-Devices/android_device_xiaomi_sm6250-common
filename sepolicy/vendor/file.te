@@ -4,6 +4,9 @@ type sysfs_fps, sysfs_type, fs_type;
 # KCAL
 type kcal_dev, sysfs_type, fs_type;
 
+# Smart Charging
+type sysfs_scharge, sysfs_type, fs_type;
+
 # Touchboost
 type sysfs_touchboost, sysfs_type, fs_type;
 

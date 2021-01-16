@@ -16,5 +16,8 @@
 /sys/devices/platform/kcal_ctrl.0(/.*)?                      u:object_r:kcal_dev:s0
 /sys/bus/platform/drivers/kcal_ctrl(/.*)?                    u:object_r:kcal_dev:s0
 
+# Smart Charging
+/sys/class/power_supply/battery/charging_enabled                    u:object_r:sysfs_scharge:s0
+
 # Touchboost
 /sys/module/msm_performance/parameters/touchboost		            u:object_r:sysfs_touchboost:s0

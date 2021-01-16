@@ -8,6 +8,9 @@ allow system_app kcal_dev:dir search;
 # SELinux
 allow system_app selinuxfs:file { read open };
 
+# Smart Charging
+allow system_app sysfs_scharge:file { getattr open write };
+
 # Touchboost
 allow system_app sysfs_touchboost:file { open read getattr write };
 allow system_app vendor_sysfs_msm_perf:dir { search };
