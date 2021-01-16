@@ -203,6 +203,15 @@
     <string name="selinux_permissive_toast_title">Selinux set to permissive!</string>
     <string name="selinux_enforcing_toast_title">Selinux set to enforcing!</string>
 
+    <!-- Charging category -->
+    <string name="charging_category">Charging</string>
+
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Smart Charging</string>
+    <string name="smart_charging_summary">Helps in cooling down &amp; also protects from over charging the device</string>
+    <string name="reset_stats_title">Reset battery stats</string>
+    <string name="reset_stats_summary">Battery stats will get reset when charging limit is reached</string>
+
     <!-- Label for feature switch -->
     <string name="switch_bar_on">On</string>
 

@@ -60,5 +60,8 @@
 # Label discard_max_bytes in /data partition
 /sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/discard_max_bytes u:object_r:vendor_sysfs_scsi_host:s0
 
+# Smart Charging
+/sys/class/power_supply/battery/charging_enabled                        u:object_r:sysfs_scharge:s0
+
 # Touchboost
 /sys/module/msm_performance/parameters/touchboost		        u:object_r:sysfs_touchboost:s0
