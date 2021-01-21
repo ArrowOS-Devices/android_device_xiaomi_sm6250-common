@@ -364,6 +364,7 @@ vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 
 # Charger
+bin/charger
 vendor/bin/hvdcp_opti
 vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
