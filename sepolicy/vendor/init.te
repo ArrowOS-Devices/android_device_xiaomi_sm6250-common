@@ -1,2 +1,4 @@
 # USB Fastcharge
 allow init sysfs_fcharge:file { write open };
+
+allow init vendor_configs_file:file { mounton };
