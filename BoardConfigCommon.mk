@@ -8,6 +8,9 @@ COMMON_PATH := device/xiaomi/sm6250-common
 
 BUILD_BROKEN_DUP_RULES := true
 
+# APEX image
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a

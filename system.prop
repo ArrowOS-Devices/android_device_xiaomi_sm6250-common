@@ -1,3 +1,6 @@
+# Apex
+ro.apex.updatable=true
+
 # Audio
 media.stagefright.audio.sink=384
 af.fast.track.multiplier=2
