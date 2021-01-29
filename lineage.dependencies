@@ -10,5 +10,11 @@
     "repository": "kdrag0n/proton-clang",
     "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
     "branch": "master"
+  },
+  {
+    "remote": "github",
+    "repository": "SonalSingh18/vendor_xiaomi_miuicamera",
+    "target_path": "vendor/xiaomi/miuicamera",
+    "branch": "master"
   }
 ]
