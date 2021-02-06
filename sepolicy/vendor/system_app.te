@@ -10,3 +10,6 @@ allow system_app kcal_dev:dir search;
 
 # USB Fastcharge
 allow system_app sysfs_fcharge:file { open read getattr write };
+
+allow system_app vendor_default_prop:file { getattr open read };
+allow system_app vendor_default_prop:file {map};
