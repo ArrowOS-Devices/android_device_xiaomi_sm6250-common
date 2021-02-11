@@ -137,6 +137,9 @@ debug.hwui.skia_atrace_enabled=false
 # DPM
 persist.dpm.feature=1
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # HVDCP
 persist.vendor.cp.taper_term_mv=6500
 persist.vendor.cp.fcc_main_ua=400000
