@@ -4,5 +4,8 @@ type sysfs_fps, sysfs_type, fs_type;
 # KCAL
 type kcal_dev, sysfs_type, fs_type;
 
+# KGSL
+type sysfs_kgsl, sysfs_type, fs_type;
+
 # USB Fastcharge
 type sysfs_fcharge, sysfs_type, fs_type;
