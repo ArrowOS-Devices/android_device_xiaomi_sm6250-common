@@ -1,1 +1,2 @@
 binder_call(gmscore_app, hal_memtrack_default);
+binder_call(gmscore_app, hal_memtrack_hwservice);
