@@ -31,6 +31,7 @@ import com.xiaomi.parts.R;
 
 import com.xiaomi.parts.kcal.Utils;
 import com.xiaomi.parts.ambient.SensorsDozeService;
+import com.xiaomi.parts.thermal.ThermalUtils;
 
 import java.io.IOException;
 import java.util.List;
@@ -135,6 +136,9 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
 
        // Ambient
         context.startService(new Intent(context, SensorsDozeService.class));
+
+       // Thermal
+        ThermalUtils.startService(context);
 
         boolean enabled = sharedPrefs.getBoolean(DeviceSettings.PREF_KEY_FPS_INFO, false);
         if (enabled) {
