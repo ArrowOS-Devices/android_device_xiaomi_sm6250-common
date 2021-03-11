@@ -1,3 +1,7 @@
+# GPU Boost
+allow init sysfs_kgsl:lnk_file { read };
+allow init sysfs_kgsl:file { write open };
+
 # SELinux
 allow init su:process { noatsecure  rlimitinh  siginh  transition };
 

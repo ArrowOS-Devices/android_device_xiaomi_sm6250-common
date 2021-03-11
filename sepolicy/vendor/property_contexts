@@ -1,2 +1,5 @@
 # Dirac
 persist.audio.dirac                             u:object_r:dirac_prop:s0
+
+# GPU Boost
+persist.xiaomiparts.gpu_profile                 u:object_r:boost_prop:s0

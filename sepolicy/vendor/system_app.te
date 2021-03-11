@@ -1,6 +1,11 @@
 # FPS Info
 allow system_app sysfs_fps:file rw_file_perms;
 
+# GPU Boost
+set_prop(system_app, boost_prop);
+get_prop(system_app, boost_prop);
+allow system_app boost_prop:property_service set;
+
 # KCAL
 allow system_app kcal_dev:file rw_file_perms;
 allow system_app kcal_dev:dir search;

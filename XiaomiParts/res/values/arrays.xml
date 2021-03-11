@@ -153,4 +153,19 @@
         <item>245 245 256 35 33 127 127 0</item>
         <item>245 240 256 35 33 127 127 0</item>
     </array>
+
+    <!-- Boost -->
+    <string-array name="gpuboost_profiles"> 
+        <item>@string/gpuboost_disable</item> 
+        <item>@string/gpuboost_low</item> 
+        <item>@string/gpuboost_medium</item> 
+        <item>@string/gpuboost_high</item>
+    </string-array>
+    <string-array name="gpuboost_values"> 
+        <item>0</item>
+        <item>1</item>
+        <item>2</item> 
+        <item>3</item>
+    </string-array>
+
 </resources>
