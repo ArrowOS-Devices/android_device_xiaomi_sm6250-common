@@ -204,8 +204,6 @@ public class ThermalSettingsFragment extends PreferenceFragment
         switch (state) {
             case ThermalUtils.STATE_BENCHMARK:
                 return R.drawable.ic_thermal_benchmark;
-            case ThermalUtils.STATE_BROWSER:
-                return R.drawable.ic_thermal_browser;
             case ThermalUtils.STATE_CAMERA:
                 return R.drawable.ic_thermal_camera;
             case ThermalUtils.STATE_DIALER:
@@ -246,7 +244,6 @@ public class ThermalSettingsFragment extends PreferenceFragment
         private final int[] items = {
                 R.string.thermal_default,
                 R.string.thermal_benchmark,
-                R.string.thermal_browser,
                 R.string.thermal_camera,
                 R.string.thermal_dialer,
                 R.string.thermal_gaming,
@@ -381,9 +378,6 @@ public class ThermalSettingsFragment extends PreferenceFragment
                 case ThermalUtils.STATE_BENCHMARK:
                     mThermalUtils.writePackage(entry.info.packageName,
                             ThermalUtils.STATE_BENCHMARK);
-                    break;
-                case ThermalUtils.STATE_BROWSER:
-                    mThermalUtils.writePackage(entry.info.packageName, ThermalUtils.STATE_BROWSER);
                     break;
                 case ThermalUtils.STATE_CAMERA:
                     mThermalUtils.writePackage(entry.info.packageName, ThermalUtils.STATE_CAMERA);
