@@ -15,6 +15,9 @@ ro.hardware.fp                          u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.                         u:object_r:vendor_fp_prop:s0
 vendor.sys.fp                           u:object_r:vendor_fp_prop:s0
 
+# GPU Boost
+persist.xiaomiparts.gpu_profile         u:object_r:boost_prop:s0
+
 # Power
 vendor.powerhal.state                   u:object_r:power_prop:s0
 vendor.powerhal.audio                   u:object_r:power_prop:s0

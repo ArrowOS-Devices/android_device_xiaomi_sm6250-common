@@ -190,7 +190,16 @@
     <string name="touchboost_title">Enable Touchboost</string> 
     <string name="touchboost_summary">Boost CPU when touch detected for smooth experience</string>
 
-    <!-- SELinux category -->
+    <!-- GPUBoost -->
+    <string name="gpuboost_title">GPU boost</string>
+    <string name="gpuboost_dialogTitle">Select your GPU boost level</string>
+
+    <string name="gpuboost_high">High</string>
+    <string name="gpuboost_medium">Medium</string>
+    <string name="gpuboost_low">Low</string>
+    <string name="gpuboost_disable">Disabled</string>
+
+    <!-- Selinux category -->
     <string name="selinux_category">SELinux</string>
 
     <!-- SELinux toggle -->

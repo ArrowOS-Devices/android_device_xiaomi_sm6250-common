@@ -160,6 +160,15 @@
                 android:exported="false">
         </service>
 
+        <service android:name=".GpuboostTileService"
+            android:icon="@drawable/ic_gpuboost"
+            android:label="@string/gpuboost_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
         <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"
