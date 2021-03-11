@@ -138,7 +138,7 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
         context.startService(new Intent(context, SensorsDozeService.class));
 
        // Thermal
-        ThermalUtils.startService(context);
+        ThermalUtils.initialize(context);
 
         boolean enabled = sharedPrefs.getBoolean(DeviceSettings.PREF_KEY_FPS_INFO, false);
         if (enabled) {
