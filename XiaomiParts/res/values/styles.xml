@@ -35,4 +35,6 @@
     <style name="DeviceSettings.SwitchBar" parent="@android:style/ThemeOverlay.Material.ActionBar">
     </style>
 
+    <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.Material.Medium" />
+
 </resources>
