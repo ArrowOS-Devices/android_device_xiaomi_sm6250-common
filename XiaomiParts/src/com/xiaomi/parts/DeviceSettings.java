@@ -69,6 +69,9 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_MSM_TOUCHBOOST = "touchboost";
     public static final String MSM_TOUCHBOOST_PATH = "/sys/module/msm_performance/parameters/touchboost";
 
+    public static final String PREF_GPUBOOST = "gpuboost";
+    public static final String GPUBOOST_SYSTEM_PROPERTY = "persist.xiaomiparts.gpu_profile";
+
     private static final String SELINUX_CATEGORY = "selinux";
     private static final String PREF_SELINUX_MODE = "selinux_mode";
     private static final String PREF_SELINUX_PERSISTENCE = "selinux_persistence";
@@ -85,6 +88,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private SecureSettingSwitchPreference mFastcharge;
     private static SwitchPreference mFpsInfo;
     private SecureSettingSwitchPreference mTouchboost;
+    private SecureSettingListPreference mGPUBOOST;
     private SwitchPreference mSelinuxMode;
     private SwitchPreference mSelinuxPersistence;
     private static TwoStatePreference mSmartChargingSwitch;
@@ -197,6 +201,11 @@ public class DeviceSettings extends PreferenceFragment implements
 
         mSeekBarPreference = (SeekBarPreference) findPreference("seek_bar");
         mSeekBarPreference.setEnabled(mSmartChargingSwitch.isChecked());
+
+        mGPUBOOST = (SecureSettingListPreference) findPreference(PREF_GPUBOOST);
+        mGPUBOOST.setValue(FileUtils.getStringProp(GPUBOOST_SYSTEM_PROPERTY, "0"));
+        mGPUBOOST.setSummary(mGPUBOOST.getEntry());
+        mGPUBOOST.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -251,6 +260,12 @@ public class DeviceSettings extends PreferenceFragment implements
                   return true;
                 }
 
+                break;
+
+            case PREF_GPUBOOST:
+                mGPUBOOST.setValue((String) value);
+                mGPUBOOST.setSummary(mGPUBOOST.getEntry());
+                FileUtils.setStringProp(GPUBOOST_SYSTEM_PROPERTY, (String) value);
                 break;
 
             default:
