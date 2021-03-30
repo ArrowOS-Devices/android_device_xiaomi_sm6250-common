@@ -41,4 +41,8 @@
     <!-- The font size for the clock in the status bar. -->
     <dimen name="status_bar_clock_size">13.5sp</dimen>
 
+    <!-- Location on the screen of the center of the physical power button. -->
+    <dimen name="physical_power_button_center_screen_location_y">871.5px</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">871.5px</dimen>
+
 </resources>
