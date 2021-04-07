@@ -193,11 +193,6 @@
     <string name="clear_speaker_summary">Reproduzca un sonido de 30 segundos para limpiar el altavoz</string>
     <string name="clear_speaker_description">Realice esta función una o dos veces si encuentra que el altavoz está ligeramente bloqueado por el polvo. Establezca el volumen de medios al máximo.</string>
 
-    <!-- Touchboost -->
-    <string name="boost_title">Suavizar el táctil</string>
-    <string name="touchboost_title">Activar suavizado táctil</string>
-    <string name="touchboost_summary">Habilite para una experiencia táctil más agradable</string>
-
     <!-- Selinux Switch -->
     <string name="selinux_category">SELinux</string>
     <string name="selinux_explanation_summary">SELinux es un conjunto de modificaciones del kernel y herramientas de espacio de usuario. Cambiar de modo puede provocar efectos no deseados. Úselo bajo su propio riesgo.</string>

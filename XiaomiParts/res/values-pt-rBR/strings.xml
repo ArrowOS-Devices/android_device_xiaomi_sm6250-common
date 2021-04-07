@@ -193,11 +193,6 @@
     <string name="clear_speaker_summary">Reproduza um áudio de 30 segundos para limpar o alto-falante</string>
     <string name="clear_speaker_description">Execute este recurso uma ou duas vezes se descobrir que o alto-falante está ligeiramente bloqueado por poeira. Defina o volume da mídia para o máximo.</string>
 
-    <!-- Touchboost -->
-    <string name="boost_title">Suavizar o toque</string>
-    <string name="touchboost_title">Habilitar suavização de toque</string>
-    <string name="touchboost_summary">Habilite para uma experiência de toque mais agradável</string>
-
     <!-- Selinux Switch -->
     <string name="selinux_category">SELinux</string>
     <string name="selinux_explanation_summary">SELinux é um conjunto de modificações do kernel e ferramentas de espaço do usuário. Alterar os modos pode causar efeitos indesejados. Use por sua conta e risco.</string>

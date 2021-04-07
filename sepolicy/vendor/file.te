@@ -22,8 +22,4 @@ type sysfs_fps, sysfs_type, fs_type;
 
 type kcal_dev, sysfs_type, fs_type;
 
-type sysfs_scharge, sysfs_type, fs_type;
-
-type sysfs_touchboost, sysfs_type, fs_type;
-
 type sysfs_fcharge, sysfs_type, fs_type;
