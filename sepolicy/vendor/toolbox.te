@@ -1,4 +1,0 @@
-# GPU Boost
-allow toolbox init:fifo_file { getattr write };
-allow toolbox boost_prop:property_service { set };
-allow toolbox boost_prop:file { getattr  open  read };

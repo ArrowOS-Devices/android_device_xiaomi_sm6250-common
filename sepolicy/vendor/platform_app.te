@@ -1,5 +1,2 @@
 # FPS Info
 allow platform_app sysfs_fps:file { getattr open read };
-
-# GPU Boost
-allow platform_app sysfs_kgsl:dir { search };
