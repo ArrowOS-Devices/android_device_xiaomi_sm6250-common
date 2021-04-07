@@ -2,6 +2,4 @@ type power_prop, property_type;
 
 type vendor_fp_prop, property_type;
 
-type boost_prop, property_type;
-
 type dirac_prop, property_type;

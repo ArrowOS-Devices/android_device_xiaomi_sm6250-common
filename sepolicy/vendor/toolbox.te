@@ -2,7 +2,3 @@ allow toolbox per_boot_file:dir create_dir_perms;
 allow toolbox per_boot_file:file create_file_perms;
 
 allow toolbox self:capability kill;
-
-allow toolbox init:fifo_file { getattr write };
-allow toolbox boost_prop:property_service { set };
-allow toolbox boost_prop:file { getattr  open  read };

@@ -52,58 +52,6 @@
 
     <PreferenceCategory
 
-        android:key="boost"
-        android:title="@string/boost_category" >
-
-        <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
-            android:key="touchboost"
-            android:defaultValue="false"
-            android:title="@string/touchboost_title"
-            android:icon="@drawable/ic_boost"
-            android:summary="@string/touchboost_summary" />
-
-        <com.xiaomi.parts.preferences.SecureSettingListPreference
-            android:key="gpuboost"
-            android:dialogTitle="@string/gpuboost_dialogTitle"
-            android:entries="@array/gpuboost_profiles"
-            android:entryValues="@array/gpuboost_values"
-            android:icon="@drawable/ic_gpuboost"
-            android:defaultValue="0"
-            android:title="@string/gpuboost_title" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-
-        android:key="charging"
-        android:title="@string/charging_category">
-
-        <SwitchPreference
-            android:key="smart_charging"
-            android:icon="@drawable/ic_charging_main"
-            android:summary="@string/smart_charging_summary"
-            android:title="@string/smart_charging_title" />
-
-        <com.xiaomi.parts.preferences.SeekBarPreference
-            android:key="seek_bar"
-            android:title="Select charging limit"
-            android:layout="@layout/preference_slider"
-            android:defaultValue="95"
-            android:max="100"
-            android:min="80"
-            android:layout_gravity="center_vertical"
-            android:layout_width="match_parent"/>
-
-        <SwitchPreference
-            android:key="reset_stats"
-            android:icon="@drawable/ic_info_outline_24dp"
-            android:title="@string/reset_stats_title"
-            android:summary="@string/reset_stats_summary" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-
         android:key="display"
         android:title="@string/display_category">
 

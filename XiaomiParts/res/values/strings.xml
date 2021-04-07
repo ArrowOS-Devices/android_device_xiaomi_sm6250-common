@@ -183,23 +183,7 @@
     <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
     <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.</string>
 
-    <!-- Boost Category -->
-    <string name="boost_category">Boost</string>
-
-    <!-- Touchboost -->
-    <string name="touchboost_title">Enable Touchboost</string> 
-    <string name="touchboost_summary">Boost CPU when touch detected for smooth experience</string>
-
-    <!-- GPUBoost -->
-    <string name="gpuboost_title">GPU boost</string>
-    <string name="gpuboost_dialogTitle">Select your GPU boost level</string>
-
-    <string name="gpuboost_high">High</string>
-    <string name="gpuboost_medium">Medium</string>
-    <string name="gpuboost_low">Low</string>
-    <string name="gpuboost_disable">Disabled</string>
-
-    <!-- Selinux category -->
+    <!-- SELinux category -->
     <string name="selinux_category">SELinux</string>
 
     <!-- SELinux toggle -->
@@ -211,15 +195,6 @@
     <string name="selinux_persistence_summary">Restore the above set sepolicy mode on each boot</string>
     <string name="selinux_permissive_toast_title">Selinux set to permissive!</string>
     <string name="selinux_enforcing_toast_title">Selinux set to enforcing!</string>
-
-    <!-- Charging category -->
-    <string name="charging_category">Charging</string>
-
-    <!-- Smart charging -->
-    <string name="smart_charging_title">Smart Charging</string>
-    <string name="smart_charging_summary">Helps in cooling down &amp; also protects from over charging the device</string>
-    <string name="reset_stats_title">Reset battery stats</string>
-    <string name="reset_stats_summary">Battery stats will get reset when charging limit is reached</string>
 
     <!-- Label for feature switch -->
     <string name="switch_bar_on">On</string>
