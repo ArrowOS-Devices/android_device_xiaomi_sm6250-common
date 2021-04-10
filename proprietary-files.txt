@@ -639,6 +639,18 @@ vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
+# DRM Ext1 - from gram
+vendor/lib64/liboemcrypto.so|5bc6ec673af97ff2883c847bedec7962dbf9d9a0
+
+# DRM Ext2 - from curtana
+vendor/lib64/liboemcrypto.so:vendor/lib64/liboemcrypto-curtana.so|ba8684ae8f255b981a2319bcaadaad9045ed13c6
+
+# DSP - from LA.UM.9.1.r1-09600-SMxxx0.0
+vendor/bin/dspservice|a8eb76af6150bbf29c12b76b00ab469b99f563f7
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|0b4a8dc2fa99042f9075925a79ed209f31032f57
+
 # Fingerprint
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/hw/fingerprint.fpc.default.so|645bf256da2db3ce60dddab9b3282ab7241bbcb0
