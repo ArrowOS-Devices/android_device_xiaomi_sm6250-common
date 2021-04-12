@@ -69,9 +69,11 @@ public final class ThermalUtils {
     }
 
     protected static void startService(Context context) {
-        context.startServiceAsUser(new Intent(context, ThermalService.class),
-                UserHandle.CURRENT);
-        PreferenceManager.getDefaultSharedPreferences(context).edit().putString(THERMAL_SERVICE, "true").apply();
+        if (FileUtils.fileExists(THERMAL_SCONFIG)) {
+            context.startServiceAsUser(new Intent(context, ThermalService.class),
+                    UserHandle.CURRENT);
+            PreferenceManager.getDefaultSharedPreferences(context).edit().putString(THERMAL_SERVICE, "true").apply();
+         }
     }
 
     protected static void stopService(Context context) {
@@ -89,6 +91,11 @@ public final class ThermalUtils {
 
     private String getValue() {
         String value = mSharedPrefs.getString(THERMAL_CONTROL, null);
+
+        if (value != null) {
+             String[] modes = value.split(":");
+             if (modes.length < 5) value = null;
+         }
 
         if (value == null || value.isEmpty()) {
             value = THERMAL_BENCHMARK + ":" + THERMAL_BROWSER + ":" + THERMAL_CAMERA + ":" +
