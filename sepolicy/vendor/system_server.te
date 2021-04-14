@@ -7,3 +7,5 @@ allow system_server sysfs_battery_supply:file rw_file_perms;
 
 # Allow system_server to set persist_camera_prop
 get_prop(system_server, vendor_persist_camera_prop)
+
+get_prop(system_server, vendor_display_notch_prop)
