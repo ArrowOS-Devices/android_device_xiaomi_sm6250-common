@@ -397,7 +397,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
+    vendor.qti.hardware.vibrator.service.xiaomi_sm6250
 
 # VNDK
 PRODUCT_COPY_FILES += \
