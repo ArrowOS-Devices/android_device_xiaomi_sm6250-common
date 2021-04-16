@@ -183,19 +183,6 @@
     <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
     <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.</string>
 
-    <!-- SELinux category -->
-    <string name="selinux_category">SELinux</string>
-
-    <!-- SELinux toggle -->
-    <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk.</string>
-    <string name="selinux_mode_title">SELinux mode</string>
-    <string name="selinux_permissive_summary">Permissive</string>
-    <string name="selinux_enforcing_summary">Enforcing</string>
-    <string name="selinux_persistence_title">Persist across reboots</string>
-    <string name="selinux_persistence_summary">Restore the above set sepolicy mode on each boot</string>
-    <string name="selinux_permissive_toast_title">Selinux set to permissive!</string>
-    <string name="selinux_enforcing_toast_title">Selinux set to enforcing!</string>
-
     <!-- Label for feature switch -->
     <string name="switch_bar_on">On</string>
 
