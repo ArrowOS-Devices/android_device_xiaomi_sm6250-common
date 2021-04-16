@@ -23,6 +23,4 @@ allow system_app sysfs_fps:file rw_file_perms;
 allow system_app kcal_dev:file rw_file_perms;
 allow system_app kcal_dev:dir search;
 
-allow system_app selinuxfs:file { read open };
-
 allow system_app sysfs_fcharge:file { open read getattr write };

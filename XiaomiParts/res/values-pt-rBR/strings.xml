@@ -193,15 +193,4 @@
     <string name="clear_speaker_summary">Reproduza um áudio de 30 segundos para limpar o alto-falante</string>
     <string name="clear_speaker_description">Execute este recurso uma ou duas vezes se descobrir que o alto-falante está ligeiramente bloqueado por poeira. Defina o volume da mídia para o máximo.</string>
 
-    <!-- Selinux Switch -->
-    <string name="selinux_category">SELinux</string>
-    <string name="selinux_explanation_summary">SELinux é um conjunto de modificações do kernel e ferramentas de espaço do usuário. Alterar os modos pode causar efeitos indesejados. Use por sua conta e risco.</string>
-    <string name="selinux_mode_title">Modo SELinux</string>
-    <string name="selinux_permissive_summary">Permissivo</string>
-    <string name="selinux_enforcing_summary">Forçando</string>
-    <string name="selinux_persistence_title">Habilitar durante a inicialização</string>
-    <string name="selinux_persistence_summary">Restaure o modo SELinux acima definido a cada inicialização</string>
-    <string name="selinux_permissive_toast_title">SELinux definido como permissivo!</string>
-    <string name="selinux_enforcing_toast_title">SELinux definido para forçando!</string>
-
 </resources>
