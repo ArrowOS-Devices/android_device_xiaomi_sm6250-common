@@ -143,7 +143,6 @@ ro.audio.soundfx.dirac=true
 persist.audio.dirac.speaker=true
 
 # Display
-persist.sys.sf.color_saturation=1.0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
