@@ -245,6 +245,9 @@
     <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="0" />
     <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_4_MMode2" value="0" />
+    <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="0" />
+    <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_4_MMode2" value="0" />
+
     <!-- Multimode Voice2 BTSCO -->
     <ctl name="SLIM_7_RX_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="VoiceMMode2_Tx Mixer SLIM_7_TX_MMode2" value="0" />
@@ -279,6 +282,9 @@
     <!-- Incall Music -->
     <ctl name="Incall_Music Audio Mixer MultiMedia2" value="0" />
     <ctl name="Incall_Music Audio Mixer MultiMedia9" value="0" />
+    <ctl name="Incall_Music Audio Mixer MultiMedia1" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia2" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia1" value="0" />
     <!-- Incall Music End -->
 
     <!-- compress-voip-call start -->
@@ -412,10 +418,10 @@
     <ctl name="HPHR Volume" value="20" />
     <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
 
-    <ctl name="TX_DEC0 Volume" value="102" />
-    <ctl name="TX_DEC1 Volume" value="102" />
-    <ctl name="TX_DEC2 Volume" value="102" />
-    <ctl name="TX_DEC3 Volume" value="102" />
+    <ctl name="TX_DEC0 Volume" value="84" />
+    <ctl name="TX_DEC1 Volume" value="84" />
+    <ctl name="TX_DEC2 Volume" value="84" />
+    <ctl name="TX_DEC3 Volume" value="84" />
     <ctl name="TX_DEC4 Volume" value="84" />
     <ctl name="TX_DEC5 Volume" value="84" />
     <ctl name="TX_DEC6 Volume" value="84" />
@@ -808,6 +814,9 @@
 
     <path name="audio-ull-playback speaker-protected">
         <path name="audio-ull-playback" />
+    </path>
+    <path name="audio-ull-playback handset">
+        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia8" value="1" />
     </path>
 
     <path name="audio-ull-playback handset">
@@ -2178,6 +2187,86 @@
         <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="1" />
     </path>
 
+    <path name="incall_music_uplink speaker-protected">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink receiver">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink voice-handset">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink speaker-and-bt-sco-wb">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink2">
+        <ctl name="Incall_Music_2 Audio Mixer MultiMedia2" value="1" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-protected">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 receiver">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 voice-handset">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 handset">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 bt-sco">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 bt-sco-wb">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-bt-sco">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-bt-sco-wb">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 afe-proxy">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 usb-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 usb-headset">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-usb-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
     <path name="incall-rec-uplink bt-sco">
         <path name="incall-rec-uplink" />
     </path>
@@ -2554,7 +2643,7 @@
 
     <path name="voicemmode2-call display-port1-and-usb-headset-mic">
         <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode2" value="1" />
-        <ctl name="VoiceMMode2_Tx Mixer USB_AUDIO_TX_MMode2" value="1" />
+        <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
     </path>
 
     <path name="voicemmode2-call display-port">
@@ -2564,7 +2653,7 @@
 
     <path name="voicemmode2-call display-port1">
         <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode2" value="1" />
-        <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
+        <ctl name="VoiceMMode2_Tx Mixer USB_AUDIO_TX_MMode2" value="1" />
    </path>
 
     <path name="voicemmode2-call call-proxy">
@@ -2691,6 +2780,15 @@
         <ctl name="ADC2_MIXER Switch" value="1" />
         <ctl name="ADC2 MUX" value="INP2" />
     </path>
+    <path name="amic3">
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="ADC2" />
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP3" />
+    </path>
+
     <path name="amic3">
         <ctl name="TX DEC0 MUX" value="SWR_MIC" />
         <ctl name="TX SMIC MUX0" value="ADC2" />
@@ -2920,8 +3018,8 @@
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="RX_COMP1 Switch" value="0" />
         <ctl name="RX_COMP2 Switch" value="0" />
-        <ctl name="HPHL_COMP Switch" value="1" />
-        <ctl name="HPHR_COMP Switch" value="1" />
+        <ctl name="HPHL_COMP Switch" value="0" />
+        <ctl name="HPHR_COMP Switch" value="0" />
         <ctl name="HPHL_RDAC Switch" value="1" />
         <ctl name="HPHR_RDAC Switch" value="1" />
     </path>
