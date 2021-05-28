@@ -14,3 +14,4 @@ ro.incremental.enable=1
 # IORap
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
