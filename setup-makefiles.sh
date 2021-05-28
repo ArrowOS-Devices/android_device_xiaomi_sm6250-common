@@ -1,13 +1,12 @@
 #!/bin/bash
 #
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 set -e
-
-INITIAL_COPYRIGHT_YEAR=2020
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -25,8 +24,8 @@ source "${HELPER}"
 # Initialize the helper for common
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
-# Copyright headers and guards
-write_headers "curtana"
+# Warning headers and guards
+write_headers "curtana excalibur gram joyeuse miatoll"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
@@ -36,10 +35,9 @@ write_footers
 
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
-    INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
     setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
 
-    # Copyright headers and guards
+    # Warning headers and guards
     write_headers
 
     # The standard device blobs
