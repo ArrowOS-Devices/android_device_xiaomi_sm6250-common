@@ -5,6 +5,9 @@ ro.charger.enable_suspend=true
 debug.sf.hw=1
 debug.gralloc.enable_fb_ubwc=1
 
+# IORap
+ro.iorapd.enable=true
+
 # LMKD
 ro.config.low_ram=false
 
