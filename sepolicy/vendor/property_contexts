@@ -47,10 +47,6 @@ ro.product.system.manufacturer          u:object_r:exported2_default_prop:s0
 # Media
 gpu.stats.debug.level                   u:object_r:vendor_default_prop:s0
 
-# Mlipay
-persist.vendor.sys.pay.                 u:object_r:mlipay_prop:s0
-persist.vendor.sys.provision.status     u:object_r:mlipay_prop:s0
-
 # RIL
 ro.build.software.version               u:object_r:exported_radio_prop:s0
 ro.fota.oem                             u:object_r:exported_radio_prop:s0
