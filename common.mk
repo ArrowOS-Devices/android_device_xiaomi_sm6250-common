@@ -31,13 +31,9 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Audio
 PRODUCT_PACKAGES += \
-    libvolumelistener \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libqcompostprocbundle
+    libvolumelistener
 
 PRODUCT_PACKAGES += \
-    audio.primary.atoll \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
@@ -51,15 +47,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service
 
 PRODUCT_PACKAGES += \
-    liba2dpoffload \
-    libbatterylistener \
-    libcirrusspkrprot \
-    libcomprcapture \
-    libexthwplugin \
-    libhdmiedid \
-    libhfp \
-    libsndmonitor \
-    libspkrprot \
     sound_trigger.primary.atoll:32
 
 PRODUCT_COPY_FILES += \
