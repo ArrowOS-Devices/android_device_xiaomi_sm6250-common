@@ -15,6 +15,7 @@ debug.sf.disable_client_composition_cache=1
 vendor.display.disable_rotator_ubwc=1
 vendor.display.disable_layer_stitch=0
 vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_rotator_downscale=1
 
 # LMKD
 ro.config.low_ram=false
