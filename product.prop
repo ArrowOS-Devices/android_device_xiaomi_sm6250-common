@@ -1,9 +1,20 @@
 # Charger
 ro.charger.enable_suspend=true
 
-# Graphics
-debug.sf.hw=1
-debug.gralloc.enable_fb_ubwc=1
+# Display
+debug.sf.hw=0
+debug.egl.hw=0
+debug.sf.latch_unsignaled=1
+debug.mdpcomp.logs=0
+vendor.gralloc.disable_ubwc=0
+vendor.display.disable_scaler=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.comp_mask=0
+debug.sf.disable_client_composition_cache=1
+vendor.display.disable_rotator_ubwc=1
+vendor.display.disable_layer_stitch=0
+vendor.display.disable_hw_recovery_dump=1
 
 # LMKD
 ro.config.low_ram=false
