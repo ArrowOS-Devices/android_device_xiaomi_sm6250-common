@@ -826,6 +826,8 @@ service esepmdaemon /system/vendor/bin/esepmdaemon
 on charger
     start vendor.power_off_alarm
     setprop persist.sys.usb.config mass_storage
+    chown system system /sys/class/leds/white/brightness
+    write /sys/class/leds/white/brightness 255
 
 #add poweroffhandler
 service poweroffhandler /system/vendor/bin/poweroffhandler
