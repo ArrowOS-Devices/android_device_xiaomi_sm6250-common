@@ -238,6 +238,10 @@ persist.vendor.sensors.odl.adsp=true
 persist.vendor.sensors.support_direct_channel=false
 persist.vendor.sensors.allow_non_default_discovery=true
 
+# SOC
+ro.soc.manufacturer=QTI
+ro.soc.model=SM7125
+
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
