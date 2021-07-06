@@ -227,10 +227,6 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 # Volume steps
 ro.config.vc_call_vol_steps=10
 
-# WFD
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
-
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
 
