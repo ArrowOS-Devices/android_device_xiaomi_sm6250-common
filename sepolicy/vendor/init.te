@@ -2,3 +2,5 @@
 allow init sysfs_fcharge:file { write open };
 
 allow init vendor_configs_file:file { mounton };
+
+allow init vendor_file:file mounton;

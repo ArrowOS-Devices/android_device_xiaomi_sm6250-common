@@ -1,0 +1,2 @@
+allow vendor_per_mgr sysfs:file r_file_perms;
+
