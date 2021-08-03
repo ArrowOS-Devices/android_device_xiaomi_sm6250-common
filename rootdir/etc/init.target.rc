@@ -191,3 +191,6 @@ on post-fs && property:ro.boot.hwname=curtana
 
 on post-fs && property:ro.boot.hwname=joyeuse
     mount none /vendor/lib64/liboemcrypto-curtana.so /vendor/lib64/liboemcrypto.so bind
+
+on post-fs && property:ro.boot.hwname=excalibur
+    mount none /vendor/lib64/liboemcrypto-curtana.so /vendor/lib64/liboemcrypto.so bind
