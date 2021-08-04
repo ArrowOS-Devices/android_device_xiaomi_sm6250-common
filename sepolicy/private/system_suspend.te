@@ -1,3 +1,4 @@
 allow system_suspend sysfs:dir { open read };
+allow system_suspend sysfs_vibrator:dir { read open };
 allow system_suspend sysfs:file { getattr };
 dontaudit system_suspend sysfs:file { open read };
