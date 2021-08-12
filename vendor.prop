@@ -220,6 +220,9 @@ persist.vendor.sensors.allow_non_default_discovery=true
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# Volume steps
+ro.config.vc_call_vol_steps=10
+
 # WFD
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
