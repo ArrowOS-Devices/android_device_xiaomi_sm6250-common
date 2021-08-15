@@ -4,6 +4,13 @@ on boot
   chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
   chmod 0666 /sys/class/drm/sde-crtc-0/measured_fps
 
+# CABC and HBM mode
+on property:persist.lcd.cabc_mode=*
+    write /sys/devices/platform/soc/soc:qcom,dsi-display/cabc ${persist.lcd.cabc_mode}
+
+on property:persist.lcd.hbm_mode=*
+    write /sys/devices/platform/soc/soc:qcom,dsi-display/hbm ${persist.lcd.hbm_mode}
+
 # KCAL permissions
   chown system system /sys/devices/platform/kcal_ctrl.0/kcal
   chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable

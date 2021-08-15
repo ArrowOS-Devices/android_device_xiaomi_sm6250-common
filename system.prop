@@ -41,6 +41,8 @@ ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+persist.lcd.cabc_mode=1
+persist.lcd.hbm_mode=0
 
 # DPM
 persist.dpm.feature=1
