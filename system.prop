@@ -76,6 +76,10 @@ persist.dpm.feature=1
 #GBoard
 ro.com.google.ime.kb_pad_port_b=1
 
+# Display
+persist.lcd.cabc_mode=1
+persist.lcd.hbm_mode=0
+
 # HVDCP
 persist.vendor.cp.taper_term_mv=6500
 persist.vendor.cp.fcc_main_ua=400000

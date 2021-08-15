@@ -67,6 +67,17 @@
                 android:targetPackage="com.xiaomi.parts.kcal" />
         </Preference>
 
+        <Preference
+            android:key="lcd_features_settings"
+            android:icon="@drawable/ic_cabc"
+            android:title="@string/lcd_features_title"
+            android:summary="@string/lcd_features_summary" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.xiaomi.parts.display.LcdFeaturesPreferenceActivity"
+                android:targetPackage="com.xiaomi.parts.display" />
+        </Preference>
+
         <SwitchPreference
             android:key="fps_info"
             android:icon="@drawable/ic_fps_info"
