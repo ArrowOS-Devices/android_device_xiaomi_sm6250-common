@@ -161,6 +161,7 @@
     <string name="thermal_streaming">Streaming</string>
 
     <!-- Dirac settings -->
+    <string name="dirac_enable">Enable Mi-Sound</string>
     <string name="dirac_title">Mi-Sound Enhancer</string>
     <string name="dirac_summary">Optimize sound quality with Mi-Sound, Hi-Fi</string>
     <string name="dirac_headset_title">Headset type</string>
