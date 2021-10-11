@@ -55,7 +55,7 @@
 
         <activity
             android:name=".DeviceSettingsActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/advanced_settings"
             android:excludeFromRecents="true"
             android:launchMode="singleTask">
@@ -82,6 +82,7 @@
         <activity
             android:name=".dirac.DiracActivity"
             android:label="@string/dirac_title"
+            android:exported="true"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -95,7 +96,7 @@
 
         <activity
             android:name=".kcal.KCalSettingsActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/CustomOptionsTheme"
             android:label="@string/advanced_settings_kcal">
 
@@ -111,6 +112,7 @@
 
         <activity
             android:name="com.xiaomi.parts.ambient.AmbientGesturePreferenceActivity"
+            android:exported="true"
             android:icon="@drawable/ic_doze"
             android:label="@string/ambient_display_gestures_title"
             android:theme="@style/Theme.SubSettingsBase">
@@ -134,7 +136,7 @@
 
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
-            android:exported="false" 
+            android:exported="true" 
             android:label="@string/clear_speaker_title"
             android:theme="@style/Theme.SubSettingsBase">
 
@@ -147,6 +149,7 @@
         <service android:name=".StartAction" />
         <service
             android:name=".XiaomipartsTile"
+            android:exported="true"
             android:enabled="true"
             android:icon="@drawable/ic_mi"
             android:label="@string/advanced_settings"
@@ -158,6 +161,7 @@
 
         <service
             android:name="com.xiaomi.parts.LogTile"
+            android:exported="true"
             android:icon="@drawable/ic_qs_log"
             android:label="@string/quick_settings_log_tile_label"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -168,10 +172,11 @@
         </service>
         <service
             android:name=".FPSInfoService"
-            android:exported="false">
+            android:exported="true">
         </service>
         <service
             android:name=".FPSTileService"
+            android:exported="true"
             android:icon="@drawable/ic_fps_info"
             android:label="@string/fps_info_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -183,6 +188,7 @@
 
         <activity
             android:name=".thermal.ThermalActivity"
+            android:exported="true"
             android:label="@string/thermal_title"
             android:theme="@style/CustomOptionsTheme">
             <intent-filter>
@@ -200,7 +206,8 @@
         </activity>
 
         <service
-            android:name=".thermal.ThermalService" 
+            android:name=".thermal.ThermalService"
+            android:exported="true"
             android:permission="ThermalService">
         </service>
     </application>
