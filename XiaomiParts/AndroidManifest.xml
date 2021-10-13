@@ -56,7 +56,6 @@
         <activity
             android:name=".DeviceSettingsActivity"
             android:exported="false"
-            android:icon="@drawable/ic_mi"
             android:label="@string/advanced_settings"
             android:excludeFromRecents="true"
             android:launchMode="singleTask">
@@ -70,8 +69,8 @@
                 android:name="com.android.settings.dismiss"
                 android:value="9,13,30" />
             <meta-data
-                android:name="com.android.settings.bg.hint"
-                android:resource="@color/homepage_parts_background" />
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_mi" />
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.homepage" />
@@ -147,7 +146,7 @@
         <service
             android:name=".XiaomipartsTile"
             android:enabled="true"
-            android:icon="@drawable/ic_qs_mi"
+            android:icon="@drawable/ic_mi"
             android:label="@string/advanced_settings"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
