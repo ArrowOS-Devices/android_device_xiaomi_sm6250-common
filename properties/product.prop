@@ -9,6 +9,7 @@ debug.gralloc.enable_fb_ubwc=1
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # LMKD
 ro.config.low_ram=false
