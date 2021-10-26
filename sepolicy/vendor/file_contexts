@@ -31,6 +31,11 @@
 # Mlipay
 /vendor/bin/mlipayd@1\.1                                                u:object_r:hal_mlipay_default_exec:s0
 
+# Misys
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@1\.0-service                             u:object_r:hal_misys_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service                             u:object_r:hal_misys_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@3\.0-service                             u:object_r:hal_misys_default_exec:s0
+
 # Per-boot files
 /data/per_boot(/.*)?                                                    u:object_r:per_boot_file:s0
 
