@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service
 
 PRODUCT_PACKAGES += \
+    libssrec \
     sound_trigger.primary.atoll:32
 
 PRODUCT_COPY_FILES += \
