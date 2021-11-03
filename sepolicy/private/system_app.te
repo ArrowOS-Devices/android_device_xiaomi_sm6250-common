@@ -1,5 +1,2 @@
 # Thermal
 allow system_app sysfs_thermal:file write;
-
-# LCD
-set_prop(system_app, persist_lcd_prop)

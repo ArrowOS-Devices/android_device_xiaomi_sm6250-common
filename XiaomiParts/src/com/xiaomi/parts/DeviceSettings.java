@@ -31,7 +31,6 @@ import androidx.preference.PreferenceCategory;
 import com.xiaomi.parts.kcal.KCalSettingsActivity;
 import com.xiaomi.parts.ambient.AmbientGesturePreferenceActivity;
 import com.xiaomi.parts.speaker.ClearSpeakerActivity;
-import com.xiaomi.parts.display.LcdFeaturesPreferenceActivity;
 import com.xiaomi.parts.preferences.CustomSeekBarPreference;
 import com.xiaomi.parts.preferences.SecureSettingListPreference;
 import com.xiaomi.parts.preferences.SecureSettingSwitchPreference;
@@ -43,7 +42,6 @@ public class DeviceSettings extends PreferenceFragment implements
 
     public static final String CATEGORY_DISPLAY = "display";
     public static final String PREF_DEVICE_KCAL = "device_kcal";
-    private static final String PREF_LCD_FEATURES = "lcd_features_settings";
 
     public static final String PREF_ENABLE_DIRAC = "dirac_enabled";
     public static final String PREF_HEADSET = "dirac_headset_pref";
@@ -60,7 +58,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private Preference mKcal;
     private Preference mClearSpeakerPref;
     private Preference mAmbientPref;
-    private Preference mLcdFeaturesPref;
     private SecureSettingSwitchPreference mEnableDirac;
     private SecureSettingListPreference mHeadsetType;
     private SecureSettingListPreference mPreset;
@@ -100,13 +97,6 @@ public class DeviceSettings extends PreferenceFragment implements
         mClearSpeakerPref = (Preference) findPreference(PREF_CLEAR_SPEAKER);
         mClearSpeakerPref.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), ClearSpeakerActivity.class);
-            startActivity(intent);
-            return true;
-        });
-
-        mLcdFeaturesPref = (Preference) findPreference(PREF_LCD_FEATURES);
-        mLcdFeaturesPref.setOnPreferenceClickListener(preference -> {
-            Intent intent = new Intent(getActivity().getApplicationContext(), LcdFeaturesPreferenceActivity.class);
             startActivity(intent);
             return true;
         });
