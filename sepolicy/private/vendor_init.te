@@ -1,3 +1,1 @@
 dontaudit vendor_init init_service_status_private_prop:file { read };
-
-dontaudit vendor_init persist_lcd_prop:file { getattr  map  open  read };
