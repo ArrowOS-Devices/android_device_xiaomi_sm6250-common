@@ -26,10 +26,6 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.GET_TASKS" />
 
-    <uses-sdk
-        android:minSdkVersion="29"
-        android:targetSdkVersion="29" />
-
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
     <protected-broadcast android:name="com.xiaomi.parts.CUST_UPDATE" />
 
