@@ -1,5 +1,5 @@
 # please don't kill yourself unless it's allowed
-dontaudit { fsck toolbox vdc zygote } self:capability kill;
+dontaudit { fsck toolbox vdc zygote ueventd kernel } self:capability kill;
 
 # We never apply OTAs when GSI is running
 dontaudit hal_bootctl_default gsi_metadata_file:dir search;
