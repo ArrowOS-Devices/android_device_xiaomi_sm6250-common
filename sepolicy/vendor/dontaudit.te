@@ -20,3 +20,6 @@ dontaudit untrusted_app_all selinuxfs:file read;
 
 # all other no-context attempt by apps (as spotted on iQIYI)
 dontaudit untrusted_app_all sysfs_net:dir search;
+
+# Thermal
+dontaudit vendor_thermal-engine self:capability dac_override;
