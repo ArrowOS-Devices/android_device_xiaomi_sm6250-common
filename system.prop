@@ -97,6 +97,9 @@ persist.sys.media.use-awesome=1
 ro.audio.samplerate=48000
 ro.audio.pcm.samplerate=48000
 
+# Camera
+vendor.camera.aux.packagelist=org.lineageos.snap,com.android.camera
+
 # CNE
 persist.vendor.cne.feature=1
 
