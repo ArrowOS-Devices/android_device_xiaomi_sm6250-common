@@ -161,6 +161,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := atoll
 
+# Power
+TARGET_POWERHAL_BOOST_EXT := $(COMMON_PATH)/power/boost-ext.cpp
+
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/properties/product.prop
