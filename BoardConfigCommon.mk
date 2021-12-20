@@ -163,6 +163,7 @@ TARGET_BOARD_PLATFORM := atoll
 
 # Power
 TARGET_POWERHAL_BOOST_EXT := $(COMMON_PATH)/power/boost-ext.cpp
+TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/mode-ext.cpp
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
