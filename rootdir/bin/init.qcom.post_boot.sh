@@ -191,8 +191,6 @@ function configure_memory_parameters() {
     # Enable conservative pl
     echo 1 > /proc/sys/kernel/sched_conservative_pl
 
-    echo "0:1324800" > /sys/module/cpu_boost/parameters/input_boost_freq
-    echo 120 > /sys/module/cpu_boost/parameters/input_boost_ms
     echo "0:0 1:0 2:0 3:0 4:1804800 5:0 6:0 7:2208000" > /sys/module/cpu_boost/parameters/powerkey_input_boost_freq
     echo 400 > /sys/module/cpu_boost/parameters/powerkey_input_boost_ms
 
