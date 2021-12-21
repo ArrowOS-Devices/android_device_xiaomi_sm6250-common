@@ -16,5 +16,9 @@
     "repository": "SonalSingh18/vendor_xiaomi_miuicamera",
     "target_path": "vendor/xiaomi/miuicamera",
     "branch": "master"
+  },
+  {
+    "repository": "android_prebuilts_clang_host_linux-x86_clang-r437112",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-r437112"
   }
 ]
