@@ -266,6 +266,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
+# Libshims
+PRODUCT_PACKAGES += \
+    fakelogprint
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_sm6250
