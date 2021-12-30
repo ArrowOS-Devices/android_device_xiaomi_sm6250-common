@@ -1,4 +1,4 @@
-set_prop(vendor_init, power_prop)
+set_prop(vendor_init, vendor_power_prop)
 set_prop(vendor_init, vendor_alarm_boot_prop)
 set_prop(vendor_init, vendor_video_prop)
 
@@ -13,7 +13,7 @@ allow vendor_init vendor_camera_prop:property_service set;
 
 allow vendor_init input_device:chr_file { create setattr unlink rw_file_perms };
 
-allow vendor_init dirac_prop:property_service set;
+allow vendor_init vendor_dirac_prop:property_service set;
 
 allow vendor_init default_prop:file { read };
 

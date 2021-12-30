@@ -13,4 +13,4 @@ get_prop(hal_mlipay_default, vendor_fp_prop)
 set_prop(hal_mlipay_default, vendor_fp_prop)
 set_prop(hal_mlipay_default, vendor_tee_listener_prop)
 
-allow hal_mlipay_default ifaa_prop:property_service { set };
+allow hal_mlipay_default vendor_ifaa_prop:property_service { set };
