@@ -43,6 +43,8 @@ genfscon sysfs /devices/platform/soc/soc:gpio_keys/power/wakeup                 
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/rx-macro/rx_swr_ctrl/power/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc/tx-macro/tx_swr_ctrl/power/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/input/input1/wakeup                                                                                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/input/input3/wakeup                                                                                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/input/input4/wakeup                                                                                                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/input/input1/power/wakeup                                                                                                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_aac/power/wakeup                                                                                                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_alac/power/wakeup                                                                                                       u:object_r:sysfs_wakeup:s0
