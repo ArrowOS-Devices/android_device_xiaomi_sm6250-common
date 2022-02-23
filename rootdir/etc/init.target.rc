@@ -44,7 +44,10 @@ on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    
+
+    # Disable UFS powersaving
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 0
+
     # Boot time cpuset and stune
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-7
