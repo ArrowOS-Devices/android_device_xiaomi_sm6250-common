@@ -98,7 +98,7 @@ ro.audio.samplerate=48000
 ro.audio.pcm.samplerate=48000
 
 # Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.android.camera2,com.android.camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.android.camera2,com.android.camera,net.sourceforge.opencamera
 
 # CNE
 persist.vendor.cne.feature=1
