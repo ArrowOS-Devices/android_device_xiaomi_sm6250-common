@@ -1,1 +1,2 @@
 get_prop(untrusted_app, vendor_persist_camera_prop)
+allow untrusted_app zygote:unix_stream_socket { getopt };
