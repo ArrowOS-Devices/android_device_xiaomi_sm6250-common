@@ -12,10 +12,10 @@
     "target_path": "hardware/xiaomi"
   },
   {
-    "remote": "github",
+    "remote": "gitlab",
     "repository": "SonalSingh18/vendor_xiaomi_miuicamera",
     "target_path": "vendor/xiaomi/miuicamera",
-    "branch": "master"
+    "branch": "12"
   },
   {
     "remote": "gitlab",
