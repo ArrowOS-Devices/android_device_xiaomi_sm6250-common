@@ -17,11 +17,14 @@
 package com.xiaomi.parts.thermal;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
+import android.view.MenuItem;
 
 import com.xiaomi.parts.utils.FileUtils;
 
-public class ThermalActivity extends PreferenceActivity {
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
+
+public class ThermalActivity extends CollapsingToolbarBaseActivity {
 
     private static final String TAG_THERMAL = "thermal";
     private static final String THERMAL_SCONFIG = "/sys/class/thermal/thermal_message/sconfig";
@@ -31,8 +34,17 @@ public class ThermalActivity extends PreferenceActivity {
         super.onCreate(savedInstanceState);
 
         if (FileUtils.fileExists(THERMAL_SCONFIG)) {
-            getFragmentManager().beginTransaction().replace(android.R.id.content,
+            getFragmentManager().beginTransaction().replace(R.id.content_frame,
                     new ThermalSettingsFragment(), TAG_THERMAL).commit();
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return false;
     }
 }
