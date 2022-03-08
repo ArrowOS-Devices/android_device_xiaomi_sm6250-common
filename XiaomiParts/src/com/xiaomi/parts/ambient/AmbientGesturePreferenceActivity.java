@@ -18,16 +18,18 @@
 package com.xiaomi.parts.ambient;
 
 import android.os.Bundle;
-import com.xiaomi.parts.R;
-import android.preference.PreferenceActivity;
 
-public class AmbientGesturePreferenceActivity extends PreferenceActivity {
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
+
+public class AmbientGesturePreferenceActivity extends CollapsingToolbarBaseActivity {
+
+    private static final String TAG_AMBIENTGESTURES = "ambientgestures";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction()
-                .replace(android.R.id.content, new AmbientGesturePreferenceFragment())
-                .commit();
+        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+                new AmbientGesturePreferenceFragment(), TAG_AMBIENTGESTURES).commit();
     }
 }
