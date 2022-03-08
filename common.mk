@@ -151,10 +151,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.3.vendor
 
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -501,6 +497,10 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
+
+# XiaomiDoze
+PRODUCT_PACKAGES += \
+    XiaomiDoze
 
 # XiaomiParts
 PRODUCT_PACKAGES += \

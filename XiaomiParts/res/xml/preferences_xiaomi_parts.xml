@@ -88,8 +88,8 @@
             android:icon="@drawable/ic_xiaomidoze">
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"
-                android:targetPackage="org.lineageos.settings.doze" />
+                android:targetClass="com.xiaomi.doze.DozeSettingsActivity"
+                android:targetPackage="com.xiaomi.doze" />
         </Preference>
 
         <PreferenceScreen

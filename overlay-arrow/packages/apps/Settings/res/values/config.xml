@@ -29,6 +29,6 @@
     <bool name="config_supportSmartCharging">true</bool>
 
     <!-- Device specific doze package -->
-    <string name="config_customDozePackage">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
+    <string name="config_customDozePackage">com.xiaomi.doze/com.xiaomi.doze.DozeSettingsActivity</string>
 
 </resources>

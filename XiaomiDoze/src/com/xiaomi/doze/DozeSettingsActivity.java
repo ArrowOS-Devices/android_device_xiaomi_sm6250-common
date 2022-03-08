@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.doze;
+package com.xiaomi.doze;
 
 import android.os.Bundle;
 import android.view.MenuItem;
