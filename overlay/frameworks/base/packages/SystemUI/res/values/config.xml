@@ -35,9 +35,6 @@
     <!-- Show the network traffic monitor on statusbar even if the device has a notch -->
     <bool name="config_forceShowNetworkTrafficOnStatusBar">true</bool>
 
-    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
-    <integer name="config_screenRecorderMaxFramerate">60</integer>
-
     <!-- For how long the lock screen can be on before the display turns off. -->
     <integer name="config_lockScreenDisplayTimeout">7000</integer>
 </resources>
