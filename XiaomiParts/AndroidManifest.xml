@@ -112,7 +112,8 @@
         <activity
             android:name="com.xiaomi.parts.ambient.AmbientGesturePreferenceActivity"
             android:icon="@drawable/ic_doze"
-            android:label="@string/ambient_display_gestures_title">
+            android:label="@string/ambient_display_gestures_title"
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
