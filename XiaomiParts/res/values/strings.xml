@@ -121,10 +121,10 @@
     <string name="kcal_reset">Reset</string>
 
     <!-- USB fastcharge category -->
-    <string name="usb_fastcharge_category">USB fastcharge</string>
+    <string name="usb_fastcharge_category">Fastcharge</string>
 
     <!-- USB fastcharge -->
-    <string name="usb_fastcharge_title">Enable/Disable USB fastcharge</string>
+    <string name="usb_fastcharge_title">USB fastcharge</string>
     <string name="usb_fastcharge_summary">Charge upto 900mA when connected to a computer via USB 3.0 port</string>
 
     <!-- Logs -->
