@@ -30,9 +30,6 @@
        have distinct intensity levels -->
   <bool name="config_vibration_supports_multiple_intensities">true</bool>
 
-  <!-- Device specific doze package -->
-  <string name="config_customDozePackage">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
-
   <!-- Whether this device is supporting the microphone toggle -->
   <bool name="config_supportsMicToggle">true</bool>
 
