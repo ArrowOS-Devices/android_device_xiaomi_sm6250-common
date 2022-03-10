@@ -1100,9 +1100,6 @@ vendor/lib64/vendor.display.postproc@1.0.so
 # PowerOffAlarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 
-# Power-off charging daemon - from qssi-user 11 RKQ1.200826.002 V12.5.1.0.RJWINXM release-keys
-bin/charger:bin/charger
-
 # Public libraries
 vendor/etc/public.libraries.txt
 
