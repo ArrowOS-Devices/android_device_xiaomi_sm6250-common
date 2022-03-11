@@ -20,6 +20,7 @@ dontaudit {
 } sysfs_msm_subsys:dir search;
 
 dontaudit {
+  hal_audio_default
   vendor_hal_neuralnetworks_default
   vendor_qti_init_shell
   rild
