@@ -794,4 +794,18 @@
         <item>com.android.settings</item>
     </string-array>
 
+    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
+         Note: this value is temporary and is expected to be queried directly
+         from the HAL in the future. -->
+    <array name="config_sfps_sensor_props" translatable="false">
+        <item>@array/config_sfps_sensor_props_0</item>
+    </array>
+
+    <array name="config_sfps_sensor_props_0" translatable="false">
+        <item></item>
+        <item>1080</item>
+        <item>871.5</item>
+        <item>115</item>
+    </array>
+
 </resources>
