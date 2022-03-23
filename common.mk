@@ -300,14 +300,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
-# Notch
-PRODUCT_PACKAGES += \
-    NotchBarKiller
-
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+PRODUCT_PACKAGES += \
+   CarrierConfigOverlay \
+   DialerOverlay \
+   FrameworksResOverlay \
+   NotchBarKillerOverlay \
+   SettingsOverlay \
+   SettingsProviderOverlay \
+   SystemUIOverlay \
+   SnapOverlay \
+   TelephonyOverlay \
+   TetheringConfigOverlay \
+   WifiOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -392,10 +397,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
-# Tethering
-PRODUCT_PACKAGES += \
-    TetheringConfigOverlay
-
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
@@ -455,7 +456,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
-    WifiOverlay \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
