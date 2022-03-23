@@ -320,7 +320,6 @@ PRODUCT_PACKAGES += \
    SettingsOverlay \
    SettingsProviderOverlay \
    SystemUIOverlay \
-   SnapOverlay \
    TelephonyOverlay \
    TetheringConfigOverlay \
    WifiOverlay
