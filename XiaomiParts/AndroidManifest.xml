@@ -121,7 +121,7 @@
         <service
             android:name=".dirac.DiracTileService"
             android:exported="true"
-            android:icon="@drawable/ic_headphone"
+            android:icon="@drawable/ic_dirac"
             android:label="@string/dirac_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
