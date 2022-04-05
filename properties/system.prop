@@ -189,6 +189,9 @@ ro.telephony.default_network=22,22
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
 
+# Recovery
+persist.sys.recovery_update=true
+
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
