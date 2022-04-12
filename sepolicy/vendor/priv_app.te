@@ -1,0 +1,2 @@
+allow priv_app cgroup:file { read };
+allow priv_app vendor_audio_prop:file { map open read };
