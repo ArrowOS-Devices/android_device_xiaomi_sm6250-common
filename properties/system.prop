@@ -110,6 +110,7 @@ dalvik.vm.dexopt.secondary=true
 # Display
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_hwc_vds=1
+debug.force_no_blanking=true
 ro.opengles.version=196610
 ro.launcher.blur.appLaunch=false
 persist.sys.sf.disable_blurs=1
