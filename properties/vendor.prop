@@ -140,6 +140,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.systemuicompilerfilter=speed
 
 # Display
 debug.sf.use_phase_offsets_as_durations=1
