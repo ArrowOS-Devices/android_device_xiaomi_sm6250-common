@@ -131,6 +131,9 @@ vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
 
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
 # DPM
 persist.dpm.feature=1
 
