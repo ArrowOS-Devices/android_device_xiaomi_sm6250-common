@@ -787,10 +787,10 @@
     </array>
 
     <array name="config_sfps_sensor_props_0" translatable="false">
-        <item></item>
-        <item>1080</item>
-        <item>871.5</item>
-        <item>115</item>
+        <item></item> <!--item>displayId</item-->
+        <item>1080</item> <!--item>sensorLocationX</item-->
+        <item>765</item> <!--item>sensorLocationY</item-->
+        <item>200</item> <!--item>sensorRadius</item-->
     </array>
 
      <!-- Package name of a telephony-related system app, such as an IMS service.
