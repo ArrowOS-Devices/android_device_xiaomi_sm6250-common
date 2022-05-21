@@ -8,6 +8,9 @@ debug.gralloc.enable_fb_ubwc=1
 # LMKD
 ro.config.low_ram=false
 
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Incremental FS
 ro.incremental.enable=1
 
