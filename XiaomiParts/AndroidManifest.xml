@@ -36,7 +36,8 @@
     <application
         android:label="@string/advanced_settings"
         android:supportsRtl="true"
-        android:theme="@style/CustomOptionsTheme">
+        android:theme="@style/CustomOptionsTheme"
+        android:directBootAware="true">
 
         <receiver
             android:name=".BootReceiver"
@@ -45,7 +46,7 @@
             android:enabled="true"
             android:exported="false">
             <intent-filter android:priority="1000">
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
