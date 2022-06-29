@@ -30,6 +30,9 @@ import com.xiaomi.parts.thermal.ThermalUtils;
 public class BootReceiver extends BroadcastReceiver implements Utils {
 
     public void onReceive(Context context, Intent intent) {
+        if (!intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
+            return;
+        }
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 
