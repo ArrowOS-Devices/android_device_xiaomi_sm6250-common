@@ -150,6 +150,12 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# IORap
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+ro.iorapd.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+
 # Media
 debug.stagefright.ccodec=1
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
