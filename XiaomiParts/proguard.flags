@@ -1,0 +1,20 @@
+-keep class com.xiaomi.parts.* {
+  *;
+}
+
+-keep class com.xiaomi.parts.ambient.* {
+  *;
+}
+
+-keep class com.xiaomi.parts.kcal.* {
+  *;
+}
+
+-keep class com.xiaomi.parts.speaker.* {
+  *;
+}
+
+-keep class com.xiaomi.parts.thermal.* {
+  *;
+}
+
