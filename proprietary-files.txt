@@ -85,6 +85,7 @@ vendor/lib/libhfp.so
 vendor/lib/libqtigef.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
+vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib64/liba2dpoffload.so
 vendor/lib64/libaudioalsa.so
@@ -96,6 +97,7 @@ vendor/lib64/libhdmiedid.so
 vendor/lib64/libhfp.so
 vendor/lib64/libsndmonitor.so
 vendor/lib64/libspkrprot.so
+vendor/lib64/libssrec.so
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
