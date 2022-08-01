@@ -19,7 +19,6 @@ persist.vendor.audio.fluence.tmic.enabled=false
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicecomm=false
 persist.vendor.audio.fluence.voicerec=false
-persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.spv3.enable=true
 persist.vendor.audio.voicecall.speaker.stereo=false
@@ -107,7 +106,7 @@ vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac-lc3
 persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.bt.aac_frm_ctl.enabled=true
@@ -240,6 +239,7 @@ telephony.lteOnCdmaDevice=1
 persist.vendor.sensors.odl.adsp=true
 persist.vendor.sensors.support_direct_channel=false
 persist.vendor.sensors.allow_non_default_discovery=true
+persist.vendor.sensors.enable.mag_filter=true
 
 # SOC
 ro.soc.manufacturer=QTI
