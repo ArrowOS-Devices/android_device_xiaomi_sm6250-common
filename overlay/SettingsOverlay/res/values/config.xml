@@ -48,4 +48,8 @@
     <!-- Whether this device is supporting the camera toggle -->
     <bool name="config_supportsCamToggle">true</bool>
 
+    <!-- Fingerprint sensor -->
+    <dimen name="fingerprint_dot_radius">0dp</dimen>
+    <dimen name="fingerprint_pulse_radius">0dp</dimen>
+
 </resources>
