@@ -1,7 +1,0 @@
-# KCAL
-allow kernel kcal_dev:dir relabelto;
-allow kernel kcal_dev:file relabelto;
-allow kernel kcal_dev:lnk_file relabelto;
-
-# For zram writeback
-allow kernel per_boot_file:file r_file_perms;

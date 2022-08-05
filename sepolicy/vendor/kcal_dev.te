@@ -1,2 +1,0 @@
-# KCAL
-allow kcal_dev sysfs:filesystem associate;
