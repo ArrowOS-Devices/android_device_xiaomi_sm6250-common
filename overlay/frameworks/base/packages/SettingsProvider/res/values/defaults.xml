@@ -39,4 +39,7 @@
     <!-- Enable vibrate for calls by default -->
     <bool name="def_vibrate_when_ringing">true</bool>
 
+    <!-- Enable WiFi Display by default -->
+    <bool name="def_wifi_display_on">true</bool>
+
 </resources>
