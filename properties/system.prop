@@ -219,3 +219,4 @@ renderthread.skia.reduceopstasksplitting=true
 # WFD
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+vendor.sys.video.disable.ubwc=1
