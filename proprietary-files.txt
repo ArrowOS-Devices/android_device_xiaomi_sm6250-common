@@ -584,20 +584,20 @@ vendor/lib64/libhdr_tm.so
 
 # Graphics (SDM) - from NX627J RKQ1.200826.002
 vendor/lib/libqseed3.so|3d54259d2b90b6193ff4b2565ad82b15a31b42af
-vendor/lib/libsdedrm.so|abb87737f0833482c77134c7cd5991f20b106a20
-vendor/lib/libsdm-color.so|f83bb292a60dba8ff3b8efc643a0494e556a40c1
+vendor/lib/libsdedrm.so|96c1c7ad1e1b7c92911d00b48b3bd3b03802c338
+vendor/lib/libsdm-color.so|20cb3a86f8e1651a7d92771b0446870bd471ed0f
 vendor/lib/libsdm-colormgr-algo.so|ff4d2727b6a89d405729c17cd5a565dd5a2b614d
 vendor/lib/libsdm-diag.so|5cd1fa74b3bed8039ac82faecff59ed31231d1c1
 vendor/lib/libsdm-disp-vndapis.so|951ad465af2faece2d79ecf7a2ea60bb676505c6
-vendor/lib/libsdmextension.so|51957aaf2e9481fa8aeb102ea654b33a07a204c0
+vendor/lib/libsdmextension.so|36713add2450739cce0c4c9954e770859d7ae99d
 vendor/lib/libtinyxml2_1.so|73f7b6a9aa52ac469c01d60d72219d2d0f4b11e1
 vendor/lib64/libqseed3.so|a449d79b912415f542509874b43338b27795a1c3
-vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
-vendor/lib64/libsdm-color.so|b2bcf2c205b501024407ed5c216d2b290688bd64
+vendor/lib64/libsdedrm.so|3879f37c5458834476d3446f1ebbf5df6599c699
+vendor/lib64/libsdm-color.so|ee21a5b2489131775cdbc0f616add3d05bf514fb
 vendor/lib64/libsdm-colormgr-algo.so|6d17546d7822803700dc21968f75069d1b7392b1
 vendor/lib64/libsdm-diag.so|3d5c311d7d5d842e5a75e9ae3f9f70ceb00cd1cf
 vendor/lib64/libsdm-disp-vndapis.so|42f536763a2f91dcbae5b4b7214e652283c389d6
-vendor/lib64/libsdmextension.so|0aed8ab6ecf878ae57ecba4b8a9bfb0d184ab5f7
+vendor/lib64/libsdmextension.so|e25630e45bbde8fde0dbca53007c8cd40e65df50
 vendor/lib64/libtinyxml2_1.so|621dbc8e3d0529b9ee35393698de82ea006ca7fa
 
 # Graphics firmware
