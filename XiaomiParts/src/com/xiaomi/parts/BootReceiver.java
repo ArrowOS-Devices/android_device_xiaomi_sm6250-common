@@ -77,7 +77,7 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
         context.startService(new Intent(context, SensorsDozeService.class));
 
        // Dirac
-        DiracUtils.initialize(context);
+        DiracUtils.onBootCompleted(context);
 
        // Thermal
         ThermalUtils.initialize(context);
