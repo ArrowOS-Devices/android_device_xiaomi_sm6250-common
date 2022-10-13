@@ -186,7 +186,7 @@
             android:name=".thermal.ThermalActivity"
             android:exported="true"
             android:label="@string/thermal_title"
-            android:theme="@style/CustomOptionsTheme">
+            android:theme="@style/Theme.SubSettingsBase_v31">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
