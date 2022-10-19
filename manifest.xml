@@ -393,17 +393,6 @@
         </interface>
         <fqname>@1.0::ICryptfsHw/default</fqname>
     </hal>
-    <!-- CVP hal services
-    <hal format="hidl">
-        <name>vendor.qti.hardware.cvp</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICvp</name>
-            <instance>cvphalservice</instance>
-        </interface>
-        <fqname>@1.0::ICvp/cvphalservice</fqname>
-    </hal> -->
     <hal format="hidl">
         <name>vendor.qti.hardware.data.connection</name>
         <transport>hwbinder</transport>
@@ -426,7 +415,6 @@
         </interface>
         <fqname>@1.0::ILinkLatency/default</fqname>
     </hal>
-    <!-- DSP Service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.dsp</name>
         <transport>hwbinder</transport>
@@ -457,7 +445,6 @@
         </interface>
         <fqname>@1.0::IFmHci/default</fqname>
     </hal>
-    <!-- QCC HAL Service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.qccvndhal</name>
         <transport>hwbinder</transport>
@@ -467,7 +454,7 @@
             <instance>qccvndhal</instance>
         </interface>
         <fqname>@1.0::IQccvndhal/qccvndhal</fqname>
-    </hal> <!-- QCC HAL Service -->
+    </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.iop</name>
         <transport>hwbinder</transport>
@@ -631,32 +618,6 @@
         <fqname>@1.0::IUimRemoteServiceServer/uimRemoteServer0</fqname>
         <fqname>@1.0::IUimRemoteServiceServer/uimRemoteServer1</fqname>
     </hal>
-    <!-- SCVE Panorama hal services
-    <hal format="hidl">
-        <name>vendor.qti.hardware.scve.objecttracker</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IObjectTracker</name>
-            <instance>objectTracker</instance>
-        </interface>
-        <fqname>@1.0::IObjectTracker/objectTracker</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.scve.panorama</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IPanoramaStitching</name>
-            <instance>panoStitching</instance>
-        </interface>
-        <interface>
-            <name>IPanoramaTracking</name>
-            <instance>panoTracking</instance>
-        </interface>
-        <fqname>@1.0::IPanoramaStitching/panoStitching</fqname>
-        <fqname>@1.0::IPanoramaTracking/panoTracking</fqname>
-    </hal> -->
     <hal format="hidl">
         <name>vendor.qti.hardware.sensorscalibrate</name>
         <transport>hwbinder</transport>
@@ -751,75 +712,5 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IPasrManager/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.mfidoca</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IFidoService</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IFidoService/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.mlipay</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IMlipayService</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IMlipayService/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.mtdservice</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IMTService</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::IMTService/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.tidaservice</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>ITidaService</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::ITidaService/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.touchfeature</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITouchFeature</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITouchFeature/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.vibratorfeature</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IVibratorFeature</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IVibratorFeature/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.vsimapp</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IVSIMService</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IVSIMService/default</fqname>
     </hal>
 </manifest>
