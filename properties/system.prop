@@ -12,6 +12,7 @@ ro.qc.sdk.audio.fluencetype=none
 
 # Bluetooth
 persist.vendor.btstack.aac_frm_ctl.enabled=true
+persist.vendor.btstack.enable.lpa=true
 persist.vendor.btstack.enable.twsplus=true
 persist.vendor.service.bdroid.soc.alwayson=true
 
