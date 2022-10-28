@@ -122,7 +122,8 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     libgui_vendor \
-    Snap
+    Snap \
+    GCamGOPrebuilt-V3
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
