@@ -728,14 +728,6 @@ vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
-vendor/lib64/libcapiv2svacnn.so
-vendor/lib64/libcapiv2vop.so
-vendor/lib64/libgcs-calwrapper.so
-vendor/lib64/libgcs-ipc.so
-vendor/lib64/libgcs-osal.so
-vendor/lib64/libgcs.so
-vendor/lib64/liblistensoundmodel2.so
-vendor/lib64/libmulawdec.so
 
 # Media
 system_ext/lib/libmmosal.so
