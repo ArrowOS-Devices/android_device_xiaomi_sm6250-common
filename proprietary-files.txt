@@ -1321,28 +1321,3 @@ vendor/firmware/drv2624.rtp
 
 # WiFi
 vendor/bin/cnss-daemon
-
-# Unlinked
-#vendor/bin/sviswitch
-#vendor/etc/init/init.qti.fm.rc
-#vendor/lib/libStDrvInt.so
-#vendor/lib/libaudio_log_utils.so
-#vendor/lib/libbt-hidlclient.so
-#vendor/lib/libfastcrc.so
-#vendor/lib/liblistenjni.so
-#vendor/lib/libmt.so
-#vendor/lib/libsns_device_mode_stub.so
-#vendor/lib/libstreamparser.so
-#vendor/lib/libvideoutils.so
-#vendor/lib/libwvkeybox.so
-#vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so
-#vendor/lib64/libSEESalt.so
-#vendor/lib64/libUSTANative.so
-#vendor/lib64/libaudio_log_utils.so
-#vendor/lib64/libbt-hidlclient.so
-#vendor/lib64/liblistenjni.so
-#vendor/lib64/libmt.so
-#vendor/lib64/libmt@1.2.so
-#vendor/lib64/libsns_device_mode_stub.so
-#vendor/lib64/libwvkeybox.so
-#vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
