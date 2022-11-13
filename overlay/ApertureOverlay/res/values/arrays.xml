@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="config_ignoredAuxCameraIds">
+        <item>2</item>
+        <item>6</item>
+        <item>20</item>
+        <item>100</item>
+    </string-array>
+</resources>
