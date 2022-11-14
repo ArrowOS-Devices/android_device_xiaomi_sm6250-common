@@ -61,7 +61,7 @@ function blob_fixup() {
             sed -i "s/4\.0/4\.1/g" "${2}"
         ;;
         vendor/lib64/camera/components/com.qti.node.watermark.so)
-            $PATCHELF_TOOL --add-needed "libpiex_shim.so" "${2}"
+           "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
         ;;
     esac
 }
