@@ -61,8 +61,6 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
 
         FileUtils.setValue(DeviceSettings.USB_FASTCHARGE_PATH, Settings.Secure.getInt(context.getContentResolver(),
                 DeviceSettings.PREF_USB_FASTCHARGE, 0));
-        // Dirac
-        context.startService(new Intent(context, DiracService.class));
 
        // Ambient
         context.startService(new Intent(context, SensorsDozeService.class));

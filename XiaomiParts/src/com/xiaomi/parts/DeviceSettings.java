@@ -43,10 +43,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String CATEGORY_DISPLAY = "display";
     public static final String PREF_DEVICE_KCAL = "device_kcal";
 
-    public static final String PREF_ENABLE_DIRAC = "dirac_enabled";
-    public static final String PREF_HEADSET = "dirac_headset_pref";
-    public static final String PREF_PRESET = "dirac_preset_pref";
-
     public static final String CATEGORY_FASTCHARGE = "usb_fastcharge";
     public static final String PREF_USB_FASTCHARGE = "fastcharge";
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
@@ -58,9 +54,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private Preference mKcal;
     private Preference mClearSpeakerPref;
     private Preference mAmbientPref;
-    private SecureSettingSwitchPreference mEnableDirac;
-    private SecureSettingListPreference mHeadsetType;
-    private SecureSettingListPreference mPreset;
     private SecureSettingSwitchPreference mFastcharge;
     private static SwitchPreference mFpsInfo;
 
@@ -101,30 +94,6 @@ public class DeviceSettings extends PreferenceFragment implements
             return true;
         });
 
-        boolean enhancerEnabled;
-        try {
-            enhancerEnabled = DiracService.sDiracUtils.isDiracEnabled();
-        } catch (java.lang.NullPointerException e) {
-            getContext().startService(new Intent(getContext(), DiracService.class));
-            try {
-                enhancerEnabled = DiracService.sDiracUtils.isDiracEnabled();
-            } catch (NullPointerException ne) {
-                // Avoid crash
-                ne.printStackTrace();
-                enhancerEnabled = false;
-            }
-        }
-
-        mEnableDirac = (SecureSettingSwitchPreference) findPreference(PREF_ENABLE_DIRAC);
-        mEnableDirac.setOnPreferenceChangeListener(this);
-        mEnableDirac.setChecked(enhancerEnabled);
-
-        mHeadsetType = (SecureSettingListPreference) findPreference(PREF_HEADSET);
-        mHeadsetType.setOnPreferenceChangeListener(this);
-
-        mPreset = (SecureSettingListPreference) findPreference(PREF_PRESET);
-        mPreset.setOnPreferenceChangeListener(this);
-
         if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
             mFastcharge = (SecureSettingSwitchPreference) findPreference(PREF_USB_FASTCHARGE);
             mFastcharge.setChecked(FileUtils.getFileValueAsBoolean(USB_FASTCHARGE_PATH, true));
@@ -142,33 +111,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object value) {
         final String key = preference.getKey();
         switch (key) {
-            case PREF_ENABLE_DIRAC:
-                try {
-                    DiracService.sDiracUtils.setEnabled((boolean) value);
-                } catch (java.lang.NullPointerException e) {
-                    getContext().startService(new Intent(getContext(), DiracService.class));
-                    DiracService.sDiracUtils.setEnabled((boolean) value);
-                }
-                break;
-
-            case PREF_HEADSET:
-                try {
-                    DiracService.sDiracUtils.setHeadsetType(Integer.parseInt(value.toString()));
-                } catch (java.lang.NullPointerException e) {
-                    getContext().startService(new Intent(getContext(), DiracService.class));
-                    DiracService.sDiracUtils.setHeadsetType(Integer.parseInt(value.toString()));
-                }
-                break;
-
-            case PREF_PRESET:
-                try {
-                    DiracService.sDiracUtils.setLevel(String.valueOf(value));
-                } catch (java.lang.NullPointerException e) {
-                    getContext().startService(new Intent(getContext(), DiracService.class));
-                    DiracService.sDiracUtils.setLevel(String.valueOf(value));
-                }
-                break;
-
             case PREF_USB_FASTCHARGE:
                 FileUtils.setValue(USB_FASTCHARGE_PATH, (boolean) value);
                 break;
