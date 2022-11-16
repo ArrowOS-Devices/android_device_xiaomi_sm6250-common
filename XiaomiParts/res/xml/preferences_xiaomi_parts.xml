@@ -76,7 +76,7 @@
             android:key="clear_speaker_settings"
             android:title="@string/clear_speaker_title"
             android:summary="@string/clear_speaker_summary"
-            android:icon="@drawable/ic_speaker_cleaner_icon" >
+            android:icon="@drawable/ic_clear_speaker" >
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetClass="com.xiaomi.parts.speaker.ClearSpeakerActivity"
