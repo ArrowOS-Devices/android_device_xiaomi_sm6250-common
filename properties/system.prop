@@ -17,6 +17,7 @@ persist.vendor.btstack.enable.twsplus=true
 persist.vendor.service.bdroid.soc.alwayson=true
 
 # Camera
+ro.miui.notch=1
 vendor.camera.aux.packagelist=com.android.camera,org.lineageos.aperture,org.pixelexperience.faceunlock
 persist.vendor.camera.privapp.list=com.android.camera,org.lineageos.aperture
 

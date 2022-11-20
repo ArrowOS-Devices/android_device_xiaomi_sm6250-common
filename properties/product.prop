@@ -1,3 +1,7 @@
+# Camera
+ro.hardware.camera=xiaomi
+ro.com.google.lens.oem_camera_package=com.android.camera
+
 # Charger
 ro.charger.enable_suspend=true
 
