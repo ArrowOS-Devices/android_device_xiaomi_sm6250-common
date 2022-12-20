@@ -42,4 +42,7 @@
     <!-- Enable WiFi Display by default -->
     <bool name="def_wifi_display_on">true</bool>
 
+    <!-- Default setting for Settings.Global.MOBILE_DATA_ALWAYS_ON -->
+    <bool name="def_mobile_data_always_on">true</bool>
+
 </resources>
